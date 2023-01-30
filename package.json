@@ -1,0 +1,26 @@
+{
+  "name": "snaptic-tailwindcss",
+  "version": "1.0.0",
+  "description": "Snaptic | Tailwind CSS 3 Personal Portfolio Template",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/styles.css -o ./assets/css/main.css --watch",
+    "minify": "npx tailwindcss -i ./src/styles.css -o ./assets/css/main.min.css --minify"
+  },
+  "keywords": [],
+  "author": "Orloop Digital Agency",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "animate.css": "^4.1.1",
+    "shufflejs": "^6.1.0",
+    "swiper": "^8.4.5"
+  }
+}

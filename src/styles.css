@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@layer base {
+  /* =====================
+  Variable CSS
+======================*/
+  :root {
+    /* General */
+    --primary-color: #2a85ff;
+    --secondary-color: #c0c3cf;
+    --tertinary-color: #ffffff;
+    --hover-color: #0069f6;
+    --ring-color: #93c5fd;
+
+    /* Light Mode */
+    --theme-color: #fefefe;
+    --body-color: #f5f6fa;
+    --heading-color: #1a1d1f;
+    --paragraph-color: #6f767e;
+    --box-shadow-color: 0 25px 25px rgb(0 0 0 / 0.15);
+  }
+  body {
+    font-family: "Outfit", sans-serif;
+    background-color: var(--body-color);
+  }
+
+  body.dark-mode {
+    /* Dark Mode */
+    --theme-color: #27272f;
+    --body-color: #1d1d24;
+    --heading-color: #fcfcfc;
+    --paragraph-color: #9a9fa5;
+    --box-shadow-color: 0 0 10px rgb(187, 187, 187, 0.3);
+  }
+  body.theme-magenta {
+    --primary-color: #ea00ff;
+    --hover-color: #d100d1;
+    --ring-color: #ff8aff;
+  }
+  body.theme-lime {
+    --primary-color: #26d929;
+    --hover-color: #00d100;
+    --ring-color: #8aff8a;
+  }
+  body.theme-violet {
+    --primary-color: #6e00ff;
+    --hover-color: #5600c7;
+    --ring-color: #cb8aff;
+  }
+  body.theme-orange {
+    --primary-color: #ff6e00;
+    --hover-color: #e66300;
+    --ring-color: #ffba85;
+  }
+  body.theme-aqua {
+    --primary-color: #0ce9e9;
+    --hover-color: #00cccc;
+    --ring-color: #9effff;
+  }
+  body.theme-coffee {
+    --primary-color: #7e6958;
+    --hover-color: #635345;
+    --ring-color: #d1c6bd;
+  }
+  body.theme-teal {
+    --primary-color: #009b81;
+    --hover-color: #006d5b;
+    --ring-color: #00c9a8;
+  }
+  body.theme-olive {
+    --primary-color: #aeae00;
+    --hover-color: #808000;
+    --ring-color: #dcdc00;
+  }
+  body.theme-crimson {
+    --primary-color: #dc143c;
+    --hover-color: #b21031;
+    --ring-color: #f4869c;
+  }
+  body.theme-chartreuse {
+    --primary-color: #cae619;
+    --hover-color: #8fa300;
+    --ring-color: #dcee68;
+  }
+  body.theme-indigo {
+    --primary-color: #6500b0;
+    --hover-color: #4b0082;
+    --ring-color: #d396ff;
+  }
+
+  /* =====================
+  Custom Scroll Bar
+======================*/
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
+    scroll-behavior: smooth;
+  }
+
+  /* Chrome, Edge, and Safari */
+  #sidebar-content::-webkit-scrollbar {
+    background-color: transparent;
+    width: 1px;
+  }
+
+  .modal::-webkit-scrollbar {
+    background-color: transparent;
+    width: 3px;
+  }
+
+  .modal::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 20px;
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
+/* =====================
+  Tooltip
+======================*/
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
+
+/* =====================
+  Tab menu active
+======================*/
+.tab-toggle.active {
+  @apply bg-primary text-tertinary hover:bg-primary hover:text-tertinary;
+}
+
+.tab-content.active {
+  @apply block;
+}
