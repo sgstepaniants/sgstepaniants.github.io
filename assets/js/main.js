@@ -132,7 +132,7 @@ tabs.forEach((tab, index) => {
 /*  ==================
     Swiper JS
 ================== */
-var swiper = new Swiper(".swiperTrusted", {
+/*var swiper = new Swiper(".swiperTrusted", {
   slidesPerView: 5,
   loop: true,
   autoplay: {
@@ -173,7 +173,7 @@ var swiper = new Swiper(".swiperClientSays", {
       spaceBetween: 20,
     },
   },
-});
+});*/
 
 /*  ==================
     Shuffle JS
