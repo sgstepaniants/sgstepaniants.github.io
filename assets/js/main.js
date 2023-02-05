@@ -16,7 +16,7 @@ if (localStorage.getItem("preferredTheme") == "dark-mode") {
 /*  ==================
     Color Scheme
 ================== */
-let colorSchemeSettings = document.querySelector("#color-scheme-settings");
+/*let colorSchemeSettings = document.querySelector("#color-scheme-settings");
 let colorSchemeWrapper = document.querySelector("#color-scheme-wrapper");
 let colorScheme = document.querySelectorAll(".color-scheme");
 
@@ -29,7 +29,7 @@ colorScheme.forEach((color) => {
 
 colorSchemeSettings.addEventListener("click", () => {
   colorSchemeWrapper.classList.toggle("mr-0");
-});
+});*/
 
 /*  ==================
     To top start
