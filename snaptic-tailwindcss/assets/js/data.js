@@ -17,7 +17,8 @@ xhttp.onreadystatechange = function () {
       openModalPortfolio[index].addEventListener("click", () => {
         modalWrapper.innerHTML = `
             <h1 class="text-xl font-medium text-heading">${data.title}</h1>
-            <p class="text-sm text-paragraph font-normal mb-3 mt-1">${data.category}</p>
+            <!--<p class="text-sm text-paragraph font-normal mb-3 mt-1">${data.category}</p>-->
+            <h2 class="text-sm font-normal text-paragraph">${data.client}</h2>
             <a href="${data.link}" class="flex items-center text-sm text-primary hover:underline w-fit">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
                 <path
@@ -26,17 +27,17 @@ xhttp.onreadystatechange = function () {
                   clip-rule="evenodd"
                 />
               </svg>
-              <span>Live Preview!</span>
+              <span>Link to paper</span>
             </a>
             <img src="assets/images/portfolio-details/${data.image}" class="w-full h-64 object-cover rounded-md my-7" alt="" />
             <ul class="flex flex-col gap-2.5 text-paragraph text-sm">
-              <li><b class="font-medium text-heading">Client :</b> ${data.client}</li>
-              <li><b class="font-medium text-heading">City :</b> ${data.city}</li>
+              <li><b class="font-medium text-heading">Venue :</b> ${data.city}</li>
               <li><b class="font-medium text-heading">Date :</b> ${data.date}</li>
+              <li><b class="font-medium text-heading">Keywords :</b> ${data.date}</li>
             </ul>
-            <h2 class="text-base text-heading font-medium mt-7 mb-3">Introduction</h2>
+            <h2 class="text-base text-heading font-medium mt-7 mb-3">Abstract</h2>
             <p class="text-sm text-paragraph font-normal text-justify">${data.introduction}</p>
-            <h2 class="text-base text-heading font-medium mt-7 mb-3">Goals</h2>
+            <!--<h2 class="text-base text-heading font-medium mt-7 mb-3">Goals</h2>
             <p class="text-sm text-paragraph font-normal text-justify">${data.goals_desc[1]}</p>
             <ul class="list-disc text-sm ml-8 text-paragraph my-4">
               <li>${data.goals_list[1]}</li>
@@ -94,7 +95,7 @@ xhttp.onreadystatechange = function () {
                   />
                 </svg>
               </a>
-            </div>
+            </div>-->
             `;
       });
     });
