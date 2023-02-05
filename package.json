@@ -1,7 +1,7 @@
 {
   "name": "snaptic-tailwindcss",
   "version": "1.0.0",
-  "description": "Snaptic | Tailwind CSS 3 Personal Portfolio Template",
+  "description": "George Stepaniants Website",
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/styles.css -o ./assets/css/main.css --watch",
