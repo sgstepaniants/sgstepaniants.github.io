@@ -219,7 +219,7 @@ openModalPortfolio.forEach((open) => {
 // Open modal blog
 openModalBlog.forEach((open) => {
   open.onclick = function () {
-    contentModalBlog.style.visibility = "visible";
+    contentModalPortfolio.style.visibility = "visible";
     document.body.style.overflow = "hidden";
   };
 });
