@@ -323,7 +323,7 @@
             </div>
 
             <div class="mb-10">
-              <h2 class="mb-3 text-2xl font-semibold text-heading">About me</h2>
+              <h2 class="mb-3 text-2xl font-semibold text-heading">About Me</h2>
               <p class="text-justify text-sm leading-relaxed">
                 I am a fourth-year PhD student at the Massachusetts Institute of Technology (MIT) in the Department of Mathematics co-advised by Prof. Philippe Rigollet and Prof. Jörn Dunkel.
                 I am also part of the Interdisciplinary Doctoral Program in Statistics through the Institute for Data, Systems, and Society (IDSS).
@@ -550,6 +550,173 @@
           </section>
           <!-- About END -->
 
+          <!-- Blog START -->
+          <section class="tab-content animate__animated animate__fadeIn hidden">
+            <h2 class="mb-6 text-2xl font-semibold text-heading">My Blog!</h2>
+            <div class="grid w-full grid-cols-1 gap-5 sm:grid-cols-2">
+              <div class="open-modal-blog group w-full cursor-pointer rounded-md border border-body">
+                <div class="overflow-hidden rounded-md">
+                  <img src="assets/images/blogs/1.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Blog 1" />
+                </div>
+                <div class="p-5">
+                  <span class="mb-2 block text-xs font-normal text-paragraph">Jan 01, 2022 | 4 min read</span>
+                  <h2 class="text-base font-medium text-heading">A Designer's Guide to Fighting Impostor Syndrome and Dealing with a Design Stress</h2>
+                </div>
+              </div>
+              <div class="open-modal-blog group w-full cursor-pointer rounded-md border border-body">
+                <div class="overflow-hidden rounded-md">
+                  <img src="assets/images/blogs/2.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Blog 2" />
+                </div>
+                <div class="p-5">
+                  <span class="mb-2 block text-xs font-normal text-paragraph">Feb 24, 2022 | 2 min read</span>
+                  <h2 class="text-base font-medium text-heading">Everything You Need to Know About Mobile Application and Web Application</h2>
+                </div>
+              </div>
+              <div class="open-modal-blog group w-full cursor-pointer rounded-md border border-body">
+                <div class="overflow-hidden rounded-md">
+                  <img src="assets/images/blogs/3.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Blog 3" />
+                </div>
+                <div class="p-5">
+                  <span class="mb-2 block text-xs font-normal text-paragraph">Apr 04, 2022 | 2 min read</span>
+                  <h2 class="text-base font-medium text-heading">What You Know About Programming and What You Don't Know About Programming</h2>
+                </div>
+              </div>
+              <div class="open-modal-blog group w-full cursor-pointer rounded-md border border-body">
+                <div class="overflow-hidden rounded-md">
+                  <img src="assets/images/blogs/4.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Blog 4" />
+                </div>
+                <div class="p-5">
+                  <span class="mb-2 block text-xs font-normal text-paragraph">May 25, 2022 | 3 min read</span>
+                  <h2 class="text-base font-medium text-heading">How to be a Good and Trustworthy Designer and Programmer in a Big Company</h2>
+                </div>
+              </div>
+              <div class="open-modal-blog group w-full cursor-pointer rounded-md border border-body">
+                <div class="overflow-hidden rounded-md">
+                  <img src="assets/images/blogs/5.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Blog 5" />
+                </div>
+                <div class="p-5">
+                  <span class="mb-2 block text-xs font-normal text-paragraph">Jun 17, 2022 | 5 min read</span>
+                  <h2 class="text-base font-medium text-heading">I Will Tell You The Truth About Designing UI Designs in The Next 5 Minutes</h2>
+                </div>
+              </div>
+              <div class="open-modal-blog group w-full cursor-pointer rounded-md border border-body">
+                <div class="overflow-hidden rounded-md">
+                  <img src="assets/images/blogs/6.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Blog 6" />
+                </div>
+                <div class="p-5">
+                  <span class="mb-2 block text-xs font-normal text-paragraph">Aug 19, 2022 | 4 min read</span>
+                  <h2 class="text-base font-medium text-heading">How? I Made a Beautiful and Modern UI/UX Design Using Figma and Sketch</h2>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Blog END -->
+
+          <!-- Portfolio START -->
+          <section class="tab-content animate__animated animate__fadeIn hidden">
+            <h2 class="mb-3 text-2xl font-semibold text-heading sm:ml-[10px]">Portfolio</h2>
+            <ul class="mb-6 flex flex-row flex-wrap gap-2 sm:ml-[10px]">
+              <li class="mr-5">
+                <button data-target="all" class="tab-portfolio whitespace-nowrap text-sm font-medium text-primary hover:underline">All</button>
+              </li>
+              <li class="mr-5">
+                <button data-target="ui/ux" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">UI/UX</button>
+              </li>
+              <li class="mr-5">
+                <button data-target="product" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">Product Design</button>
+              </li>
+              <li class="mr-5">
+                <button data-target="mobile" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">Mobile App</button>
+              </li>
+              <li class="mr-5">
+                <button data-target="web" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">Web App</button>
+              </li>
+            </ul>
+            <div id="wrapper-portfolio">
+              <div data-groups='["all","mobile"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
+                <img src="assets/images/portfolios/1.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 1" />
+                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Startup Development</h2>
+                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Mobile App</p>
+                <button
+                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
+                >
+                  View Details
+                </button>
+              </div>
+              <div data-groups='["all","product"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
+                <img src="assets/images/portfolios/2.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 2" />
+                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">E-Learning Platform</h2>
+                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Product Design</p>
+                <button
+                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
+                >
+                  View Details
+                </button>
+              </div>
+              <div data-groups='["all","product"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
+                <img src="assets/images/portfolios/3.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 3" />
+                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Task Management</h2>
+                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Product Design</p>
+                <button
+                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
+                >
+                  View Details
+                </button>
+              </div>
+              <div data-groups='["all","web"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
+                <img src="assets/images/portfolios/4.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 4" />
+                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">News and Magazine</h2>
+                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Web App</p>
+                <button
+                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
+                >
+                  View Details
+                </button>
+              </div>
+              <div data-groups='["all","web"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
+                <img src="assets/images/portfolios/5.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 5" />
+                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Real Time Software</h2>
+                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Web App</p>
+                <button
+                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
+                >
+                  View Details
+                </button>
+              </div>
+              <div data-groups='["all","mobile"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
+                <img src="assets/images/portfolios/6.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 6" />
+                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Music Player</h2>
+                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Mobile App</p>
+                <button
+                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
+                >
+                  View Details
+                </button>
+              </div>
+              <div data-groups='["all","ui/ux"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
+                <img src="assets/images/portfolios/7.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 7" />
+                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Social Media Marketing</h2>
+                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">UI/UX</p>
+                <button
+                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
+                >
+                  View Details
+                </button>
+              </div>
+              <div data-groups='["all","ui/ux"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
+                <img src="assets/images/portfolios/8.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 8" />
+                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Chat Message</h2>
+                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">UI/UX</p>
+                <button
+                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </section>
+          <!-- Portfolio END -->
+
           <!-- Resume START -->
           <section class="tab-content animate__animated animate__fadeIn hidden">
             <div class="mb-10">
@@ -716,177 +883,10 @@
           </section>
           <!-- Resume END -->
 
-          <!-- Portfolio START -->
-          <section class="tab-content animate__animated animate__fadeIn hidden">
-            <h2 class="mb-3 text-2xl font-semibold text-heading sm:ml-[10px]">Portfolio</h2>
-            <ul class="mb-6 flex flex-row flex-wrap gap-2 sm:ml-[10px]">
-              <li class="mr-5">
-                <button data-target="all" class="tab-portfolio whitespace-nowrap text-sm font-medium text-primary hover:underline">All</button>
-              </li>
-              <li class="mr-5">
-                <button data-target="ui/ux" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">UI/UX</button>
-              </li>
-              <li class="mr-5">
-                <button data-target="product" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">Product Design</button>
-              </li>
-              <li class="mr-5">
-                <button data-target="mobile" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">Mobile App</button>
-              </li>
-              <li class="mr-5">
-                <button data-target="web" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">Web App</button>
-              </li>
-            </ul>
-            <div id="wrapper-portfolio">
-              <div data-groups='["all","mobile"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/1.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 1" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Startup Development</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Mobile App</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
-              </div>
-              <div data-groups='["all","product"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/2.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 2" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">E-Learning Platform</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Product Design</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
-              </div>
-              <div data-groups='["all","product"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/3.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 3" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Task Management</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Product Design</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
-              </div>
-              <div data-groups='["all","web"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/4.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 4" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">News and Magazine</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Web App</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
-              </div>
-              <div data-groups='["all","web"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/5.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 5" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Real Time Software</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Web App</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
-              </div>
-              <div data-groups='["all","mobile"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/6.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 6" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Music Player</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Mobile App</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
-              </div>
-              <div data-groups='["all","ui/ux"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/7.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 7" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Social Media Marketing</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">UI/UX</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
-              </div>
-              <div data-groups='["all","ui/ux"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/8.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 8" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Chat Message</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">UI/UX</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
-              </div>
-            </div>
-          </section>
-          <!-- Portfolio END -->
-
-          <!-- Blog START -->
-          <section class="tab-content animate__animated animate__fadeIn hidden">
-            <h2 class="mb-6 text-2xl font-semibold text-heading">My Blog!</h2>
-            <div class="grid w-full grid-cols-1 gap-5 sm:grid-cols-2">
-              <div class="open-modal-blog group w-full cursor-pointer rounded-md border border-body">
-                <div class="overflow-hidden rounded-md">
-                  <img src="assets/images/blogs/1.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Blog 1" />
-                </div>
-                <div class="p-5">
-                  <span class="mb-2 block text-xs font-normal text-paragraph">Jan 01, 2022 | 4 min read</span>
-                  <h2 class="text-base font-medium text-heading">A Designer's Guide to Fighting Impostor Syndrome and Dealing with a Design Stress</h2>
-                </div>
-              </div>
-              <div class="open-modal-blog group w-full cursor-pointer rounded-md border border-body">
-                <div class="overflow-hidden rounded-md">
-                  <img src="assets/images/blogs/2.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Blog 2" />
-                </div>
-                <div class="p-5">
-                  <span class="mb-2 block text-xs font-normal text-paragraph">Feb 24, 2022 | 2 min read</span>
-                  <h2 class="text-base font-medium text-heading">Everything You Need to Know About Mobile Application and Web Application</h2>
-                </div>
-              </div>
-              <div class="open-modal-blog group w-full cursor-pointer rounded-md border border-body">
-                <div class="overflow-hidden rounded-md">
-                  <img src="assets/images/blogs/3.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Blog 3" />
-                </div>
-                <div class="p-5">
-                  <span class="mb-2 block text-xs font-normal text-paragraph">Apr 04, 2022 | 2 min read</span>
-                  <h2 class="text-base font-medium text-heading">What You Know About Programming and What You Don't Know About Programming</h2>
-                </div>
-              </div>
-              <div class="open-modal-blog group w-full cursor-pointer rounded-md border border-body">
-                <div class="overflow-hidden rounded-md">
-                  <img src="assets/images/blogs/4.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Blog 4" />
-                </div>
-                <div class="p-5">
-                  <span class="mb-2 block text-xs font-normal text-paragraph">May 25, 2022 | 3 min read</span>
-                  <h2 class="text-base font-medium text-heading">How to be a Good and Trustworthy Designer and Programmer in a Big Company</h2>
-                </div>
-              </div>
-              <div class="open-modal-blog group w-full cursor-pointer rounded-md border border-body">
-                <div class="overflow-hidden rounded-md">
-                  <img src="assets/images/blogs/5.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Blog 5" />
-                </div>
-                <div class="p-5">
-                  <span class="mb-2 block text-xs font-normal text-paragraph">Jun 17, 2022 | 5 min read</span>
-                  <h2 class="text-base font-medium text-heading">I Will Tell You The Truth About Designing UI Designs in The Next 5 Minutes</h2>
-                </div>
-              </div>
-              <div class="open-modal-blog group w-full cursor-pointer rounded-md border border-body">
-                <div class="overflow-hidden rounded-md">
-                  <img src="assets/images/blogs/6.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Blog 6" />
-                </div>
-                <div class="p-5">
-                  <span class="mb-2 block text-xs font-normal text-paragraph">Aug 19, 2022 | 4 min read</span>
-                  <h2 class="text-base font-medium text-heading">How? I Made a Beautiful and Modern UI/UX Design Using Figma and Sketch</h2>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Blog END -->
-
           <!-- Contact START -->
           <section class="tab-content animate__animated animate__fadeIn hidden">
-            <h2 class="mb-3 text-2xl font-semibold text-heading">Get in Touch!</h2>
-            <p class="text-sm">Don't be shy, come in contact with me, and fill out the contact form below.</p>
+            <h2 class="mb-3 text-2xl font-semibold text-heading">Contact</h2>
+            <p class="text-sm">Fill out the contact form below to send me an email.</p>
             <div id="alert-email" class="my-5"></div>
             <form action="https://formspree.io/f/myyvrbkr" method="POST" class="grid grid-cols-1 gap-5 sm:grid-cols-2" id="contact-form">
               <div class="flex flex-col">
@@ -904,7 +904,7 @@
                   class="rounded-md bg-body px-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-secondary sm:px-4 sm:py-3"
                   id="message"
                   rows="8"
-                  placeholder="Let's tell me about your project"
+                  placeholder="Enter your message"
                   required
                 ></textarea>
               </div>
