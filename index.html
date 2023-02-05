@@ -558,98 +558,78 @@
                 <button data-target="all" class="tab-portfolio whitespace-nowrap text-sm font-medium text-primary hover:underline">All</button>
               </li>
               <li class="mr-5">
-                <button data-target="ui/ux" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">UI/UX</button>
+                <button data-target="de" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">Differential Equations</button>
               </li>
               <li class="mr-5">
-                <button data-target="product" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">Product Design</button>
+                <button data-target="ot" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">Optimal Transport</button>
               </li>
               <li class="mr-5">
-                <button data-target="mobile" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">Mobile App</button>
+                <button data-target="nn" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">Neural Networks</button>
               </li>
               <li class="mr-5">
-                <button data-target="web" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">Web App</button>
+                <button data-target="other" class="tab-portfolio whitespace-nowrap text-sm font-medium hover:underline">Other</button>
               </li>
             </ul>
             <div id="wrapper-portfolio">
-              <div data-groups='["all","mobile"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/1.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 1" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Startup Development</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Mobile App</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
+              <div data-groups='["all","de"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
+                <div class="open-modal-portfolio group w-full cursor-pointer rounded-md border border-body">
+                  <div class="overflow-hidden rounded-md">
+                    <img src="assets/images/portfolios/1.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Portfolio 1" />
+                  </div>
+                  <div class="p-5">
+                    <h2 class="text-base font-medium text-heading">Learning partial differential equations in reproducing kernel Hilbert spaces</h2>
+                    <h2 class="text-sm font-normal text-paragraph"><strong>George Stepaniants</strong></h2>
+                    <span class="mb-2 block text-xs font-normal text-paragraph">JMLR, 2023</span>
+                  </div>
+                </div>
               </div>
-              <div data-groups='["all","product"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/2.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 2" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">E-Learning Platform</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Product Design</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
+              <div data-groups='["all","nn"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
+                <div class="open-modal-portfolio group w-full cursor-pointer rounded-md border border-body">
+                  <div class="overflow-hidden rounded-md">
+                    <img src="assets/images/portfolios/2.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Portfolio 2" />
+                  </div>
+                  <div class="p-5">
+                    <h2 class="text-base font-medium text-heading">GULP: a prediction-based metric between representations</h2>
+                    <h2 class="text-sm font-normal text-paragraph">Enric Boix-Adsera, Hannah Lawrence, George Stepaniants, Philippe Rigollet</h2>
+                    <span class="mb-2 block text-xs font-normal text-paragraph">NeurIPS, 2022</span>
+                  </div>
+                </div>
               </div>
-              <div data-groups='["all","product"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/3.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 3" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Task Management</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Product Design</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
+              <div data-groups='["all","ot"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
+                <div class="open-modal-portfolio group w-full cursor-pointer rounded-md border border-body">
+                  <div class="overflow-hidden rounded-md">
+                    <img src="assets/images/portfolios/3.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Portfolio 3" />
+                  </div>
+                  <div class="p-5">
+                    <h2 class="text-base font-medium text-heading">Fast and smooth interpolation on Wasserstein space</h2>
+                    <h2 class="text-sm font-normal text-paragraph">Sinho Chewi, Julien Clancy, Thibaut Le Gouic, Philippe Rigollet, George Stepaniants, Austin Stromme</h2>
+                    <span class="mb-2 block text-xs font-normal text-paragraph">AISTATS, 2021</span>
+                  </div>
+                </div>
               </div>
-              <div data-groups='["all","web"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/4.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 4" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">News and Magazine</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Web App</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
+              <div data-groups='["all","de"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
+                <div class="open-modal-portfolio group w-full cursor-pointer rounded-md border border-body">
+                  <div class="overflow-hidden rounded-md">
+                    <img src="assets/images/portfolios/4.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Portfolio 4" />
+                  </div>
+                  <div class="p-5">
+                    <h2 class="text-base font-medium text-heading">Inferring causal networks of dynamical systems through transient dynamics and perturbation</h2>
+                    <h2 class="text-sm font-normal text-paragraph">George Stepaniants, Bingni W Brunton, J Nathan Kutz</h2>
+                    <span class="mb-2 block text-xs font-normal text-paragraph">Physical Review E, 2020</span>
+                  </div>
+                </div>
               </div>
-              <div data-groups='["all","web"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/5.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 5" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Real Time Software</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Web App</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
-              </div>
-              <div data-groups='["all","mobile"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/6.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 6" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Music Player</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">Mobile App</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
-              </div>
-              <div data-groups='["all","ui/ux"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/7.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 7" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Social Media Marketing</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">UI/UX</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
-              </div>
-              <div data-groups='["all","ui/ux"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
-                <img src="assets/images/portfolios/8.png" class="h-52 w-full rounded-md object-cover transition-all duration-300 group-hover:brightness-[0.35] md:h-48 xl:h-56" alt="Portfolio 8" />
-                <h2 class="absolute bottom-[72px] left-4 hidden text-base font-medium text-tertinary transition-all duration-500 group-hover:block sm:bottom-10 sm:left-8">Chat Message</h2>
-                <p class="absolute bottom-[52px] left-4 hidden text-sm font-light text-secondary transition-all duration-500 group-hover:block sm:bottom-5 sm:left-8">UI/UX</p>
-                <button
-                  class="open-modal-portfolio absolute bottom-4 left-4 hidden rounded-full bg-primary px-4 py-1 text-[13px] font-normal text-tertinary transition-all duration-500 hover:bg-hover group-hover:block sm:left-auto sm:right-6 xl:py-2"
-                >
-                  View Details
-                </button>
+              <div data-groups='["all","other"]' class="item-portfolio group relative mb-5 w-full transition-all duration-500 sm:px-[10px] md:w-1/2">
+                <div class="open-modal-portfolio group w-full cursor-pointer rounded-md border border-body">
+                  <div class="overflow-hidden rounded-md">
+                    <img src="assets/images/portfolios/4.png" class="h-44 w-full object-cover transition-all duration-500 group-hover:scale-125" alt="Portfolio 5" />
+                  </div>
+                  <div class="p-5">
+                    <h2 class="text-base font-medium text-heading">The Lebesgue Integral, Chebyshev's Inequality, and the Weierstrass Approximation Theorem</h2>
+                    <h2 class="text-sm font-normal text-paragraph">George Stepaniants</h2>
+                    <span class="mb-2 block text-xs font-normal text-paragraph">Undergrad Project, 2017</span>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
