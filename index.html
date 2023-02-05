@@ -932,6 +932,114 @@
     </div>
     <!-- Container END -->
 
+    <!-- Color Scheme Settings START -->
+    <div class="fixed top-1/4 right-0 flex">
+      <button id="color-scheme-settings" class="flex h-12 items-center justify-start rounded-lg rounded-tr-none rounded-br-none bg-black p-3" aria-label="Color scheme settings">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 animate-spin stroke-tertinary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+          />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+      </button>
+      <div id="color-scheme-wrapper" class="-mr-48 w-48 rounded-lg rounded-tl-none rounded-tr-none rounded-br-none bg-black p-6 transition-all duration-300">
+        <h1 class="mb-3 -mt-3 font-medium text-tertinary">Color scheme</h1>
+        <ul class="grid grid-cols-4 place-items-center gap-2">
+          <li>
+            <div data-color="default" class="color-scheme has-tooltip grid h-8 w-8 cursor-pointer place-items-center rounded-full bg-[#2a85ff]">
+              <span
+                class="tooltip after:content[''] -mt-[4.5rem] select-none rounded-md bg-white px-2 py-1 text-xs font-medium text-black shadow-lg after:absolute after:top-full after:left-1/2 after:-ml-[5px] after:border-[5px] after:border-solid after:border-t-white after:border-r-transparent after:border-b-transparent after:border-l-transparent"
+                >Default</span
+              >
+            </div>
+          </li>
+          <li>
+            <div data-color="crimson" class="color-scheme has-tooltip grid h-8 w-8 cursor-pointer place-items-center rounded-full bg-[#DC143C]">
+              <span
+                class="tooltip after:content[''] -mt-[4.5rem] select-none rounded-md bg-white px-2 py-1 text-xs font-medium text-black shadow-lg after:absolute after:top-full after:left-1/2 after:-ml-[5px] after:border-[5px] after:border-solid after:border-t-white after:border-r-transparent after:border-b-transparent after:border-l-transparent"
+                >Crimson</span
+              >
+            </div>
+          </li>
+          <li>
+            <div data-color="magenta" class="color-scheme has-tooltip grid h-8 w-8 cursor-pointer place-items-center rounded-full bg-[#ea00ff]">
+              <span
+                class="tooltip after:content[''] -mt-[4.5rem] select-none rounded-md bg-white px-2 py-1 text-xs font-medium text-black shadow-lg after:absolute after:top-full after:left-1/2 after:-ml-[5px] after:border-[5px] after:border-solid after:border-t-white after:border-r-transparent after:border-b-transparent after:border-l-transparent"
+                >Magenta</span
+              >
+            </div>
+          </li>
+          <li>
+            <div data-color="lime" class="color-scheme has-tooltip grid h-8 w-8 cursor-pointer place-items-center rounded-full bg-[#26d929]">
+              <span
+                class="tooltip after:content[''] -mt-[4.5rem] select-none rounded-md bg-white px-2 py-1 text-xs font-medium text-black shadow-lg after:absolute after:top-full after:left-1/2 after:-ml-[5px] after:border-[5px] after:border-solid after:border-t-white after:border-r-transparent after:border-b-transparent after:border-l-transparent"
+                >Lime</span
+              >
+            </div>
+          </li>
+          <li>
+            <div data-color="violet" class="color-scheme has-tooltip grid h-8 w-8 cursor-pointer place-items-center rounded-full bg-[#6e00ff]">
+              <span
+                class="tooltip after:content[''] -mt-[4.5rem] select-none rounded-md bg-white px-2 py-1 text-xs font-medium text-black shadow-lg after:absolute after:top-full after:left-1/2 after:-ml-[5px] after:border-[5px] after:border-solid after:border-t-white after:border-r-transparent after:border-b-transparent after:border-l-transparent"
+                >Violet</span
+              >
+            </div>
+          </li>
+          <li>
+            <div data-color="orange" class="color-scheme has-tooltip grid h-8 w-8 cursor-pointer place-items-center rounded-full bg-[#ff6e00]">
+              <span
+                class="tooltip after:content[''] -mt-[4.5rem] select-none rounded-md bg-white px-2 py-1 text-xs font-medium text-black shadow-lg after:absolute after:top-full after:left-1/2 after:-ml-[5px] after:border-[5px] after:border-solid after:border-t-white after:border-r-transparent after:border-b-transparent after:border-l-transparent"
+                >Orange</span
+              >
+            </div>
+          </li>
+          <li>
+            <div data-color="aqua" class="color-scheme has-tooltip grid h-8 w-8 cursor-pointer place-items-center rounded-full bg-[#0ce9e9]">
+              <span
+                class="tooltip after:content[''] -mt-[4.5rem] select-none rounded-md bg-white px-2 py-1 text-xs font-medium text-black shadow-lg after:absolute after:top-full after:left-1/2 after:-ml-[5px] after:border-[5px] after:border-solid after:border-t-white after:border-r-transparent after:border-b-transparent after:border-l-transparent"
+                >Aqua</span
+              >
+            </div>
+          </li>
+          <li>
+            <div data-color="chartreuse" class="color-scheme has-tooltip grid h-8 w-8 cursor-pointer place-items-center rounded-full bg-[#cae619]">
+              <span
+                class="tooltip after:content[''] -mt-[4.5rem] select-none rounded-md bg-white px-2 py-1 text-xs font-medium text-black shadow-lg after:absolute after:top-full after:left-1/2 after:-ml-[5px] after:border-[5px] after:border-solid after:border-t-white after:border-r-transparent after:border-b-transparent after:border-l-transparent"
+                >Chartreuse</span
+              >
+            </div>
+          </li>
+          <li>
+            <div data-color="coffee" class="color-scheme has-tooltip grid h-8 w-8 cursor-pointer place-items-center rounded-full bg-[#7E6958]">
+              <span
+                class="tooltip after:content[''] -mt-[4.5rem] select-none rounded-md bg-white px-2 py-1 text-xs font-medium text-black shadow-lg after:absolute after:top-full after:left-1/2 after:-ml-[5px] after:border-[5px] after:border-solid after:border-t-white after:border-r-transparent after:border-b-transparent after:border-l-transparent"
+                >Coffee</span
+              >
+            </div>
+          </li>
+          <li>
+            <div data-color="teal" class="color-scheme has-tooltip grid h-8 w-8 cursor-pointer place-items-center rounded-full bg-[#009B81]">
+              <span
+                class="tooltip after:content[''] -mt-[4.5rem] select-none rounded-md bg-white px-2 py-1 text-xs font-medium text-black shadow-lg after:absolute after:top-full after:left-1/2 after:-ml-[5px] after:border-[5px] after:border-solid after:border-t-white after:border-r-transparent after:border-b-transparent after:border-l-transparent"
+                >Teal</span
+              >
+            </div>
+          </li>
+          <li>
+            <div data-color="olive" class="color-scheme has-tooltip grid h-8 w-8 cursor-pointer place-items-center rounded-full bg-[#AEAE00]">
+              <span
+                class="tooltip after:content[''] -mt-[4.5rem] select-none rounded-md bg-white px-2 py-1 text-xs font-medium text-black shadow-lg after:absolute after:top-full after:left-1/2 after:-ml-[5px] after:border-[5px] after:border-solid after:border-t-white after:border-r-transparent after:border-b-transparent after:border-l-transparent"
+                >Olive</span
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Color Scheme Settings END -->
+
     <!-- Modal Portfolio START -->
     <div class="invisible fixed inset-0 z-20 h-full w-full overflow-y-auto bg-black bg-opacity-80" id="content-modal-portfolio">
       <div class="modal relative top-20 mx-auto h-3/4 w-[90%] overflow-x-hidden overflow-y-scroll rounded-md border border-paragraph bg-theme p-5 shadow-lg sm:p-7 md:w-5/6 lg:w-2/4">
