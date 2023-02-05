@@ -8,7 +8,7 @@
     "minify": "npx tailwindcss -i ./src/styles.css -o ./assets/css/main.min.css --minify"
   },
   "keywords": [],
-  "author": "Orloop Digital Agency",
+  "author": "George Stepaniants",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
