@@ -248,13 +248,13 @@ window.onclick = function (event) {
     Email JS
 ================== */
 (function () {
-  emailjs.init("YOUR_PUBLIC_KEY");
+  emailjs.init("5xoqjxFFmSCUs9Tvf");
 })();
 document.getElementById("contact-form").addEventListener("submit", function (event) {
   event.preventDefault();
   const alertEmail = document.querySelector("#alert-email");
-  const serviceID = "YOUR_SERVICE_ID";
-  const templateID = "YOUR_TEMPLATE_ID";
+  const serviceID = "service_ut1dtwz";
+  const templateID = "template_6p5qwxe";
 
   emailjs.sendForm(serviceID, templateID, this).then(
     function () {

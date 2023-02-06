@@ -1,172 +1,54 @@
 {
   "portfolio-data": [
     {
-      "title": "Startup Development",
-      "category": "Mobile App",
-      "link": "#!",
-      "image": "1.png",
-      "client": "Albert Alexander",
-      "city": "Los Angeles, LA",
-      "date": "December 24, 2022",
-      "introduction": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. <br> <br> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
-      "goals_desc": {
-        "1": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy,",
-        "2": "But, I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-      },
-      "goals_list": {
-        "1": "Improve Project Productivity and Performance",
-        "2": "Improve Team Communication and Collaboration",
-        "3": "Expand Your Project Management Knowledge",
-        "4": "Execute High-Impact Projects",
-        "5": "Maximize Your Contributions within Your Role"
-      }
+      "title": "Learning partial differential equations in reproducing kernel Hilbert spaces",
+      "link": "https://arxiv.org/pdf/2108.11580.pdf",
+      "image": "pde_rkhs.pdf",
+      "authors": "George Stepaniants",
+      "venue": "Journal of Machine Learning Research (JMLR)",
+      "date": "January 25, 2023",
+      "abstract": "We propose a new data-driven approach for learning the fundamental solutions (Green's functions) of various linear partial differential equations (PDEs) given sample pairs of input-output functions. Building off the theory of functional linear regression (FLR), we estimate the best-fit Green's function and bias term of the fundamental solution in a reproducing kernel Hilbert space (RKHS) which allows us to regularize their smoothness and impose various structural constraints. We derive a general representer theorem for operator RKHSs to approximate the original infinite-dimensional regression problem by a finite-dimensional one, reducing the search space to a parametric class of Green's functions. In order to study the prediction error of our Green's function estimator, we extend prior results on FLR with scalar outputs to the case with functional outputs. Finally, we demonstrate our method on several linear PDEs including the Poisson, Helmholtz, Schrödinger, Fokker-Planck, and heat equation. We highlight its robustness to noise as well as its ability to generalize to new data with varying degrees of smoothness and mesh discretization without any additional training.",
+      "keywords": "Green's functions, partial differential equations, reproducing kernel Hilbert spaces, functional linear regression, simultaneous diagonalization"
     },
     {
-      "title": "E-Learning Platform",
-      "category": "Product Design",
-      "link": "#!",
-      "image": "2.png",
-      "client": "Albert Alexander",
-      "city": "Los Angeles, LA",
-      "date": "December 24, 2022",
-      "introduction": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. <br> <br> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
-      "goals_desc": {
-        "1": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy,",
-        "2": "But, I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-      },
-      "goals_list": {
-        "1": "Improve Project Productivity and Performance",
-        "2": "Improve Team Communication and Collaboration",
-        "3": "Expand Your Project Management Knowledge",
-        "4": "Execute High-Impact Projects",
-        "5": "Maximize Your Contributions within Your Role"
-      }
+      "title": "GULP: a prediction-based metric between representations",
+      "link": "https://arxiv.org/pdf/2210.06545.pdf",
+      "image": "gulp.png",
+      "authors": "Enric Boix-Adsera, Hannah Lawrence, George Stepaniants, Philippe Rigollet",
+      "venue": "Conference on Neural Information Processing Systems (NeurIPS)",
+      "date": "October 12, 2022",
+      "abstract": "Comparing the representations learned by different neural networks has recently emerged as a key tool to understand various architectures and ultimately optimize them. In this work, we introduce GULP, a family of distance measures between representations that is explicitly motivated by downstream predictive tasks. By construction, GULP provides uniform control over the difference in prediction performance between two representations, with respect to regularized linear prediction tasks. Moreover, it satisfies several desirable structural properties, such as the triangle inequality and invariance under orthogonal transformations, and thus lends itself to data embedding and visualization. We extensively evaluate GULP relative to other methods, and demonstrate that it correctly differentiates between architecture families, converges over the course of training, and captures generalization performance on downstream linear tasks.",
+      "keywords": "representations, CCA, CKA, transfer learning, neural networks"
     },
     {
-      "title": "Task Management",
-      "category": "Product Design",
-      "link": "#!",
-      "image": "3.png",
-      "client": "Albert Alexander",
-      "city": "Los Angeles, LA",
-      "date": "December 24, 2022",
-      "introduction": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. <br> <br> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
-      "goals_desc": {
-        "1": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy,",
-        "2": "But, I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-      },
-      "goals_list": {
-        "1": "Improve Project Productivity and Performance",
-        "2": "Improve Team Communication and Collaboration",
-        "3": "Expand Your Project Management Knowledge",
-        "4": "Execute High-Impact Projects",
-        "5": "Maximize Your Contributions within Your Role"
-      }
+      "title": "Fast and smooth interpolation on Wasserstein space",
+      "link": "http://proceedings.mlr.press/v130/chewi21a/chewi21a.pdf",
+      "image": "splines.png",
+      "authors": "Sinho Chewi, Julien Clancy, Thibaut Le Gouic, Philippe Rigollet, George Stepaniants, Austin Stromme",
+      "venue": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
+      "date": "March 18, 2021",
+      "abstract": "We propose a new method for smoothly interpolating probability measures using the geometry of optimal transport. To that end, we reduce this problem to the classical Euclidean setting, allowing us to directly leverage the extensive toolbox of spline interpolation. Unlike previous approaches to measure-valued splines, our interpolated curves (i) have a clear interpretation as governing particle flows, which is natural for applications, and (ii) come with the first approximation guarantees on Wasserstein space. Finally, we demonstrate the broad applicability of our interpolation methodology by fitting surfaces of measures using thin-plate splines.",
+      "keywords": "optimal transport, spline interpolation, thin-plate splines"
     },
     {
-      "title": "News and Magazine",
-      "category": "Web App",
-      "link": "#!",
-      "image": "4.png",
-      "client": "Albert Alexander",
-      "city": "Los Angeles, LA",
-      "date": "December 24, 2022",
-      "introduction": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. <br> <br> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
-      "goals_desc": {
-        "1": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy,",
-        "2": "But, I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-      },
-      "goals_list": {
-        "1": "Improve Project Productivity and Performance",
-        "2": "Improve Team Communication and Collaboration",
-        "3": "Expand Your Project Management Knowledge",
-        "4": "Execute High-Impact Projects",
-        "5": "Maximize Your Contributions within Your Role"
-      }
+      "title": "Inferring causal networks of dynamical systems through transient dynamics and perturbation",
+      "link": "https://arxiv.org/pdf/2006.13154.pdf",
+      "image": "netinf.png",
+      "authors": "George Stepaniants, Bingni W Brunton, J Nathan Kutz",
+      "venue": "Physical Review E (PRE)",
+      "date": "October 26, 2020",
+      "abstract": "Inferring causal relations from time series measurements is an ill-posed mathematical problem, where typically an infinite number of potential solutions can reproduce the given data. We explore in depth a strategy to disambiguate between possible underlying causal networks by perturbing the network, where the forcings are either targeted or applied at random. The resulting transient dynamics provide the critical information necessary to infer causality. Two methods are shown to provide accurate causal reconstructions: Granger causality (GC) with perturbations, and our proposed perturbation cascade inference (PCI). Perturbed GC is capable of inferring smaller networks under low coupling strength regimes. Our proposed PCI method demonstrated consistently strong performance in inferring causal relations for small (2–5 node) and large (10–20 node) networks, with both linear and nonlinear dynamics. Thus, the ability to apply a large and diverse set of perturbations to the network is critical for successfully and accurately determining causal relations and disambiguating between various viable networks.",
+      "keywords": "network inference, coupled oscillators, Granger causality, CCA"
     },
     {
-      "title": "Real Time Software",
-      "category": "Web App",
-      "link": "#!",
-      "image": "5.png",
-      "client": "Albert Alexander",
-      "city": "Los Angeles, LA",
-      "date": "December 24, 2022",
-      "introduction": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. <br> <br> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
-      "goals_desc": {
-        "1": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy,",
-        "2": "But, I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-      },
-      "goals_list": {
-        "1": "Improve Project Productivity and Performance",
-        "2": "Improve Team Communication and Collaboration",
-        "3": "Expand Your Project Management Knowledge",
-        "4": "Execute High-Impact Projects",
-        "5": "Maximize Your Contributions within Your Role"
-      }
-    },
-    {
-      "title": "Music Player",
-      "category": "Web App",
-      "link": "#!",
-      "image": "6.png",
-      "client": "Albert Alexander",
-      "city": "Los Angeles, LA",
-      "date": "December 24, 2022",
-      "introduction": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. <br> <br> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
-      "goals_desc": {
-        "1": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy,",
-        "2": "But, I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-      },
-      "goals_list": {
-        "1": "Improve Project Productivity and Performance",
-        "2": "Improve Team Communication and Collaboration",
-        "3": "Expand Your Project Management Knowledge",
-        "4": "Execute High-Impact Projects",
-        "5": "Maximize Your Contributions within Your Role"
-      }
-    },
-    {
-      "title": "Social Media Marketing",
-      "category": "UI/UX",
-      "link": "#!",
-      "image": "7.png",
-      "client": "Albert Alexander",
-      "city": "Los Angeles, LA",
-      "date": "December 24, 2022",
-      "introduction": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. <br> <br> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
-      "goals_desc": {
-        "1": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy,",
-        "2": "But, I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-      },
-      "goals_list": {
-        "1": "Improve Project Productivity and Performance",
-        "2": "Improve Team Communication and Collaboration",
-        "3": "Expand Your Project Management Knowledge",
-        "4": "Execute High-Impact Projects",
-        "5": "Maximize Your Contributions within Your Role"
-      }
-    },
-    {
-      "title": "Chat Message",
-      "category": "UI/UX",
-      "link": "#!",
-      "image": "8.png",
-      "client": "Albert Alexander",
-      "city": "Los Angeles, LA",
-      "date": "December 24, 2022",
-      "introduction": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. <br> <br> On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
-      "goals_desc": {
-        "1": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy,",
-        "2": "But, I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-      },
-      "goals_list": {
-        "1": "Improve Project Productivity and Performance",
-        "2": "Improve Team Communication and Collaboration",
-        "3": "Expand Your Project Management Knowledge",
-        "4": "Execute High-Impact Projects",
-        "5": "Maximize Your Contributions within Your Role"
-      }
+      "title": "The Lebesgue Integral, Chebyshev's Inequality, and the Weierstrass Approximation Theorem",
+      "link": "https://sites.math.washington.edu/~morrow/336_17/papers17/george.pdf",
+      "image": "33X.png",
+      "authors": "George Stepaniants",
+      "venue": "Undergraduate Academic Report (Math 33X, University of Washington)",
+      "date": "June 6, 2017",
+      "abstract": "In this paper, we will prove a famous theorem known as the Weierstrass Approximation Theorem. In 1885, Weierstrass (being 70 years of age) proved a rather astounding theorem that on the interval [0, 1], any continuous function can be approximated infinitely close by a polynomial function. His proof heavily relied on intricate analysis concepts and involved building up a sequence of polynomials from a convolution with a Gaussian heat kernel. The proof we display in this paper, is not of Weierstrass, but of Bernstein. In 1912, Sergei Bernstein introduced his Bernstein polynomials to prove this theorem and used an elegant probabilistic argument. His argument involved the use of Chebyshev's Inequality which we will shall also prove in this paper. Our rendition of Bernstein's proof is taken from Kenneth Levasseur's short paper in The American Mathematical Monthly. In order to prove Chebyshev's Inequality, we will introduce some measure theory in order to define Lebesgue measure and Lebesgue integration. Some of our measure-theoretic definitions involving σ-algebras and meaure spaces were taken from the Camridge University class notes of “Probability and Measure” by J. R. Norris. Our definition of Lebesgue integration will follow the Daniell-Riesz approach that is described in the “Lebesgue Integral for Undergraduates” text written by W. Johnston. This approach does not attempt to introduce the reader to complicated measure theoretic concepts but instead defines the Lebesgue integral by defining what it means to integrate over step functions and approximating any function below by a sequence of nondecreasing step functions. After defining the Lebesgue integral, we will move on to define basic probabilistic concepts such as a probability space, probability measure, random variables, density functions, distributions, expected value, and variance. Some of the examples involving Lebesgue measure and probability are taken from Botts' paper on “Probability Theory and the Lebesgue Integral”. We will then introduce two probability distributions and we will compute the mean and variance of the binomial distribution. Finally, we will prove Chebyshev's Inequality in its most general form and will apply it in Bernstein's proof of the Weierstrass Approximation Theorem.",
+      "keywords": "Lebesgue integral, Chebyshev's inequality, Weierstrass approximation theorem"
     }
   ],
   "blog-data": [
