@@ -208,7 +208,7 @@ const openModalPortfolio = document.querySelectorAll(".open-modal-portfolio");
 const contentModalBlog = document.querySelector("#content-modal-blog");
 const openModalBlog = document.querySelectorAll(".open-modal-blog");
 
-// Open Modal portfolio
+// Open modal portfolio
 openModalPortfolio.forEach((open) => {
   open.onclick = function () {
     contentModalPortfolio.style.visibility = "visible";
