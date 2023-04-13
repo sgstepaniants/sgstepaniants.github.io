@@ -254,7 +254,7 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
   event.preventDefault();
   const alertEmail = document.querySelector("#alert-email");
   const serviceID = "service_ut1dtwz";
-  const templateID = "template_6p5qwxe";
+  const templateID = "template_k0xotgp";
 
   emailjs.sendForm(serviceID, templateID, this).then(
     function () {
