@@ -1,8 +1,18 @@
 {
   "portfolio-data": [
     {
-      "title": "Learning partial differential equations in reproducing kernel Hilbert spaces",
-      "link": "https://arxiv.org/pdf/2108.11580.pdf",
+      "title": "Discovering dynamics and parameters of nonlinear oscillatory and chaotic systems from partial observations",
+      "link": "https://arxiv.org/abs/2304.04818",
+      "image": "hdi.png",
+      "authors": "George Stepaniants, Alasdair D. Hastewell, Dominic J. Skinner, Jan F. Totz, Jörn Dunkel",
+      "venue": "arXiv",
+      "date": "April 10, 2023",
+      "abstract": "Despite rapid progress in live-imaging techniques, many complex biophysical and biochemical systems remain only partially observable, thus posing the challenge to identify valid theoretical models and estimate their parameters from an incomplete set of experimentally accessible time series. Here, we combine sensitivity methods and VoteFair popularity ranking to construct an automated hidden dynamics inference framework that can discover predictive nonlinear dynamical models for both observable and latent variables from noise-corrupted incomplete data in oscillatory and chaotic systems. After validating the framework for prototypical FitzHugh-Nagumo oscillations, we demonstrate its applicability to experimental data from squid neuron activity measurements and Belousov-Zhabotinsky (BZ) reactions, as well as to the Lorenz system in the chaotic regime.",
+      "keywords": "Dynamical systems, hidden variables, sensitivity methods, nonlinear oscillations, chaotic dynamics"
+    },
+    {
+      "title": "Learning Partial Differential Equations in Reproducing Kernel Hilbert Spaces",
+      "link": "https://jmlr.org/papers/v24/21-1363.html",
       "image": "pde_rkhs.png",
       "authors": "George Stepaniants",
       "venue": "Journal of Machine Learning Research (JMLR)",
