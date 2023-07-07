@@ -1,6 +1,16 @@
 {
   "portfolio-data": [
     {
+      "title": "Optimal transport for automatic alignment of untargeted metabolomic data",
+      "link": "https://arxiv.org/pdf/2306.03218.pdf",
+      "image": "gw.png",
+      "authors": "Marie Breeur, George Stepaniants, Pekka Keski-Rahkonen, Philippe Rigollet, Vivian Viallon",
+      "venue": "arXiv",
+      "date": "June 5, 2023",
+      "abstract": "Untargeted metabolomic profiling through liquid chromatography-mass spectrometry (LC-MS) measures a vast array of metabolites within biospecimens, advancing drug development, disease diagnosis, and risk prediction. However, the low throughput of LC-MS poses a major challenge for biomarker discovery, annotation, and experimental comparison, necessitating the merging of multiple datasets. Current data pooling methods encounter practical limitations due to their vulnerability to data variations and hyperparameter dependence. Here we introduce GromovMatcher, a flexible and user-friendly algorithm that automatically combines LC-MS datasets using optimal transport. By capitalizing on feature intensity correlation structures, GromovMatcher delivers superior alignment accuracy and robustness compared to existing approaches. This algorithm scales to thousands of features requiring minimal hyperparameter tuning. Applying our method to experimental patient studies of liver and pancreatic cancer, we discover shared metabolic features related to patient alcohol intake, demonstrating how GromovMatcher facilitates the search for biomarkers associated with lifestyle risk factors linked to several cancer types.",
+      "keywords": "Gromov-Wasserstein, optimal transport, metabolomics, data integration"
+    },
+    {
       "title": "Discovering dynamics and parameters of nonlinear oscillatory and chaotic systems from partial observations",
       "link": "https://arxiv.org/abs/2304.04818",
       "image": "hdi.png",
