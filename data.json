@@ -1,8 +1,18 @@
 {
   "portfolio-data": [
     {
+      "title": "Covariance alignment: from maximum likelihood estimation to Gromov-Wasserstein",
+      "link": "https://arxiv.org/abs/2311.13595",
+      "image": "mle_gw.png",
+      "authors": "Yanjun Han, Philippe Rigollet, George Stepaniants",
+      "venue": "arXiv",
+      "date": "November 22, 2023",
+      "abstract": "Feature alignment methods are used in many scientific disciplines for data pooling, annotation, and comparison. As an instance of a permutation learning problem, feature alignment presents significant statistical and computational challenges. In this work, we propose the covariance alignment model to study and compare various alignment methods and establish a minimax lower bound for covariance alignment that has a non-standard dimension scaling because of the presence of a nuisance parameter. This lower bound is in fact minimax optimal and is achieved by a natural quasi MLE. However, this estimator involves a search over all permutations which is computationally infeasible even when the problem has moderate size. To overcome this limitation, we show that the celebrated Gromov-Wasserstein algorithm from optimal transport which is more amenable to fast implementation even on large-scale problems is also minimax optimal. These results give the first statistical justification for the deployment of the Gromov-Wasserstein algorithm in practice.",
+      "keywords": "Feature alignment, graph matching, optimal transport, Gromov-Wasserstein"
+    },
+    {
       "title": "Optimal transport for automatic alignment of untargeted metabolomic data",
-      "link": "https://arxiv.org/pdf/2306.03218.pdf",
+      "link": "https://arxiv.org/abs/2306.03218",
       "image": "gw.png",
       "authors": "Marie Breeur, George Stepaniants, Pekka Keski-Rahkonen, Philippe Rigollet, Vivian Viallon",
       "venue": "arXiv",
@@ -32,7 +42,7 @@
     },
     {
       "title": "GULP: a prediction-based metric between representations",
-      "link": "https://arxiv.org/pdf/2210.06545.pdf",
+      "link": "https://arxiv.org/abs/2210.06545",
       "image": "gulp.png",
       "authors": "Enric Boix-Adsera, Hannah Lawrence, George Stepaniants, Philippe Rigollet",
       "venue": "Conference on Neural Information Processing Systems (NeurIPS)",
@@ -42,7 +52,7 @@
     },
     {
       "title": "Fast and smooth interpolation on Wasserstein space",
-      "link": "http://proceedings.mlr.press/v130/chewi21a/chewi21a.pdf",
+      "link": "http://proceedings.mlr.press/v130/chewi21a",
       "image": "splines.png",
       "authors": "Sinho Chewi, Julien Clancy, Thibaut Le Gouic, Philippe Rigollet, George Stepaniants, Austin Stromme",
       "venue": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
@@ -52,7 +62,7 @@
     },
     {
       "title": "Inferring causal networks of dynamical systems through transient dynamics and perturbation",
-      "link": "https://arxiv.org/pdf/2006.13154.pdf",
+      "link": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.102.042309",
       "image": "netinf.png",
       "authors": "George Stepaniants, Bingni W Brunton, J Nathan Kutz",
       "venue": "Physical Review E (PRE)",
