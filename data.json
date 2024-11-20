@@ -22,12 +22,12 @@
     },
     {
       "title": "Discovering dynamics and parameters of nonlinear oscillatory and chaotic systems from partial observations",
-      "link": "https://arxiv.org/abs/2304.04818",
+      "link": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.6.043062",
       "image": "hdi.png",
       "authors": "George Stepaniants, Alasdair D. Hastewell, Dominic J. Skinner, Jan F. Totz, Jörn Dunkel",
-      "venue": "arXiv",
-      "date": "April 10, 2023",
-      "abstract": "Despite rapid progress in live-imaging techniques, many complex biophysical and biochemical systems remain only partially observable, thus posing the challenge to identify valid theoretical models and estimate their parameters from an incomplete set of experimentally accessible time series. Here, we combine sensitivity methods and VoteFair popularity ranking to construct an automated hidden dynamics inference framework that can discover predictive nonlinear dynamical models for both observable and latent variables from noise-corrupted incomplete data in oscillatory and chaotic systems. After validating the framework for prototypical FitzHugh-Nagumo oscillations, we demonstrate its applicability to experimental data from squid neuron activity measurements and Belousov-Zhabotinsky (BZ) reactions, as well as to the Lorenz system in the chaotic regime.",
+      "venue": "Physical Review Research (PRR)",
+      "date": "October 23, 2024",
+      "abstract": "Despite rapid progress in data acquisition techniques, many complex physical, chemical, and biological systems remain only partially observable, thus posing the challenge to identify valid theoretical models and estimate their parameters from an incomplete set of experimentally accessible time series. Here, we combine sensitivity methods and ranked-choice model selection to construct an automated hidden dynamics inference framework that can discover predictive nonlinear dynamical models for both observable and latent variables from noise-corrupted incomplete data in oscillatory and chaotic systems. After validating the framework for prototypical FitzHugh-Nagumo oscillations, we demonstrate its applicability to experimental data from squid neuron activity measurements and Belousov-Zhabotinsky reactions, as well as to the Lorenz system in the chaotic regime.",
       "keywords": "Dynamical systems, hidden variables, sensitivity methods, nonlinear oscillations, chaotic dynamics"
     },
     {
