@@ -61,6 +61,8 @@ xhttp.onreadystatechange = function () {
           </a>
           <h2 class="text-base text-heading font-medium mt-7 mb-3">Overview</h2>
           <p class="text-sm text-paragraph font-normal text-justify">${data.overview}</p>
+          <h2 class="text-base text-heading font-medium mt-7 mb-3">Responsibility</h2>
+          <p class="text-sm text-paragraph font-normal text-justify">${data.responsibility}</p>
               `;
         });
       }
