@@ -730,16 +730,16 @@ body.theme-indigo {
   right: 1.25rem;
 }
 
-.top-2{
-  top: 0.5rem;
+.top-1{
+  top: 0.25rem;
 }
 
 .-left-\[5px\]{
   left: -5px;
 }
 
-.top-1{
-  top: 0.25rem;
+.top-2{
+  top: 0.5rem;
 }
 
 .top-1\/4{
@@ -871,12 +871,12 @@ body.theme-indigo {
   margin-bottom: 2.75rem;
 }
 
-.ml-3{
-  margin-left: 0.75rem;
-}
-
 .mb-0{
   margin-bottom: 0px;
+}
+
+.ml-3{
+  margin-left: 0.75rem;
 }
 
 .mb-7{
@@ -1140,6 +1140,10 @@ body.theme-indigo {
 
 .gap-5{
   gap: 1.25rem;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-2{
@@ -1972,12 +1976,12 @@ body.theme-indigo {
     margin-bottom: 4rem;
   }
 
-  .sm\:ml-4{
-    margin-left: 1rem;
-  }
-
   .sm\:ml-\[10px\]{
     margin-left: 10px;
+  }
+
+  .sm\:ml-4{
+    margin-left: 1rem;
   }
 
   .sm\:flex{

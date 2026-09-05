@@ -416,9 +416,16 @@ function renderAbout(data) {
     "              </div>",
     "            </div>",
     "",
-    '            <section class="news-panel" aria-labelledby="news-highlights-heading">',
+    '            <section aria-labelledby="news-highlights-heading">',
     '              <h2 id="news-highlights-heading" class="mb-6 text-2xl font-semibold text-heading">News Highlights</h2>',
-    data.news.map((item) => compactTimelineItem(item.date, escapeHtml(item.title))).join("\n"),
+    '              <ol class="grid gap-4 sm:grid-cols-2" role="list">',
+    data.news.map((item) => [
+      '                <li class="news-panel">',
+      '                  <p class="news-panel-label">' + escapeHtml(item.date) + "</p>",
+      '                  <h3 class="news-panel-copy">' + escapeHtml(item.title) + "</h3>",
+      "                </li>",
+    ].join("\n")).join("\n"),
+    "              </ol>",
     "            </section>",
   ].join("\n");
 }
