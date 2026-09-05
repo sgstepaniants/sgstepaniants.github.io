@@ -177,6 +177,30 @@ publications:
     year: 2024
     url: "https://dspace.mit.edu/handle/1721.1/155887?show=full"
     research_card: false
+  - id: forsythe-complete-resolution
+    category: preprint
+    title: A Complete Resolution of Forsythe's Conjecture for Restarted Conjugate Gradients
+    authors: [Matthew J. Colbrook, George Stepaniants, Alex Townsend]
+    venue: Zenodo preprint
+    citation_detail: "(2026). DOI: 10.5281/zenodo.22289731."
+    card_venue: Zenodo preprint
+    year: 2026
+    url: "https://doi.org/10.5281/zenodo.22289731"
+    published_date: September 4, 2026
+    # Figure 1, Zenodo record 22289731, page 4. Captured from the PDF at 240 dpi.
+    image: forsythe_complete_resolution.png
+    thumbnail:
+      crop: [0, 0, 746, 578]
+      padding: 8
+      alt: Contours within the parameter rectangle of limiting two-cycles at restart length three, with four orange corner points
+    image_alt: Limiting two-cycle geometry at restart length three alongside a transverse Hopf crossing at restart length four
+    image_caption: "Figure 1. The threshold mechanism: the parameter rectangle of limiting two-cycles for restart length three (left), and a numerical reconstruction of the certified transverse Hopf crossing for restart length four (right)."
+    groups: [other]
+    research_card: true
+    abstract_label: Summary
+    abstract: >-
+      We give a complete classification of Forsythe's conjecture by restart length for exact-arithmetic restarted conjugate gradients on finite-dimensional symmetric positive definite problems. For restart lengths two and three, every iteration either terminates or has even and odd normalized residual directions that converge separately. Combined with the classical result for restart length one, this establishes the conjecture precisely for restart lengths one, two, and three. For every restart length s of four or more, we construct a diagonal positive definite counterexample of dimension s + 4 whose even residual directions do not converge. The proof combines a double-orthogonality identity and low-degree fixed-set analysis with a computer-certified Hopf bifurcation, analytic periodic-orbit and shadowing arguments, and degree elevation.
+    keywords: [conjugate gradient method, restarted Krylov method, Forsythe conjecture, orthogonal polynomials, Hopf bifurcation, computer-assisted proof]
   - id: berenstein-counterexample
     category: preprint
     title: A computer-assisted counterexample to the planar Berenstein conjecture
