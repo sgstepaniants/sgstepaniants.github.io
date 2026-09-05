@@ -176,25 +176,74 @@ var swiper = new Swiper(".swiperClientSays", {
 });*/
 
 /*  ==================
-    Shuffle JS
+    Research layout and animated filters
 ================== */
-const Shuffle = window.Shuffle;
-const element = document.querySelector("#wrapper-portfolio");
+const researchGrid = document.querySelector("#wrapper-portfolio");
 const tabPortfolio = document.querySelectorAll(".tab-portfolio");
+const researchCards = Array.from(researchGrid.querySelectorAll(".item-portfolio"));
+const researchMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+let researchShuffle;
+let researchWidth = 0;
 
-const shuffleInstance = new Shuffle(element, {
-  itemSelector: ".item-portfolio",
+function researchAnimationOptions() {
+  return {
+    speed: researchMotion.matches ? 0 : 450,
+    staggerAmount: researchMotion.matches ? 0 : 25,
+    staggerAmountMax: researchMotion.matches ? 0 : 100,
+  };
+}
+
+function updateResearchLayout() {
+  // The Research tab starts hidden. Measure only after it has a real width.
+  if (!researchGrid.offsetWidth) return;
+
+  // Measure every paper, including filtered papers, so topic changes keep
+  // the same card height and leave full titles and author lists visible.
+  researchGrid.style.setProperty("--research-card-height", "auto");
+  const height = Math.ceil(Math.max(...researchCards.map((card) => card.firstElementChild.offsetHeight)));
+  researchGrid.style.setProperty("--research-card-height", `${height}px`);
+
+  if (!researchShuffle) {
+    researchShuffle = new window.Shuffle(researchGrid, {
+      itemSelector: ".item-portfolio",
+      gutterWidth: 20,
+      easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+      ...researchAnimationOptions(),
+    });
+    // Let the lifted cards and their shadows extend beyond the grid edge.
+    researchGrid.style.overflow = "visible";
+  } else {
+    researchShuffle.update();
+  }
+}
+
+const researchResizeObserver = new ResizeObserver(([entry]) => {
+  if (entry.contentRect.width !== researchWidth) {
+    researchWidth = entry.contentRect.width;
+    updateResearchLayout();
+  }
+});
+researchResizeObserver.observe(researchGrid);
+document.fonts.ready.then(updateResearchLayout);
+
+researchMotion.addEventListener("change", () => {
+  if (!researchShuffle) return;
+  Object.assign(researchShuffle.options, researchAnimationOptions());
+  researchShuffle.setItemTransitions(researchShuffle.items);
+  researchGrid.style.transition = `height ${researchShuffle.options.speed}ms ${researchShuffle.options.easing}`;
+  researchShuffle.update();
 });
 
-tabPortfolio.forEach((tab, index) => {
+tabPortfolio.forEach((tab) => {
+  tab.setAttribute("aria-pressed", String(tab.dataset.target === "all"));
   tab.addEventListener("click", (e) => {
     e.preventDefault();
-    tabPortfolio.forEach((tab) => {
-      tab.classList.remove("text-primary");
+    tabPortfolio.forEach((filter) => {
+      filter.classList.toggle("text-primary", filter === tab);
+      filter.setAttribute("aria-pressed", String(filter === tab));
     });
-    var attr = tab.getAttribute("data-target");
-    shuffleInstance.filter(attr);
-    tabPortfolio[index].classList.add("text-primary");
+    if (!researchShuffle) updateResearchLayout();
+    researchShuffle.filter(tab.dataset.target);
   });
 });
 

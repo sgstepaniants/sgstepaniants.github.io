@@ -4,6 +4,12 @@
   "description": "George Stepaniants Website",
   "main": "index.js",
   "scripts": {
+    "update": "npm run content:render && npm run resume:build",
+    "content:render": "node scripts/render-content.mjs",
+    "content:check": "node scripts/render-content.mjs --check",
+    "resume:build": "mkdir -p resume/.build && latexmk -cd -xelatex -interaction=nonstopmode -halt-on-error -outdir=.build resume/George_Stepaniants_CV.tex && cp resume/.build/George_Stepaniants_CV.pdf resume/George_Stepaniants_CV.pdf",
+    "clean": "latexmk -C -cd -outdir=.build resume/George_Stepaniants_CV.tex && rm -rf resume/.build",
+    "check": "npm run content:check && node --check assets/js/data.js && node --check assets/js/main.js",
     "dev": "npx tailwindcss -i ./src/styles.css -o ./assets/css/main.css --watch",
     "minify": "npx tailwindcss -i ./src/styles.css -o ./assets/css/main.min.css --minify"
   },
@@ -12,6 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "js-yaml": "^5.4.1",
     "postcss": "^8.4.19",
     "prettier": "^2.8.1",
     "prettier-plugin-tailwindcss": "^0.2.1",

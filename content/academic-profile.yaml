@@ -1,0 +1,877 @@
+meta:
+  schema_version: 1
+  last_reviewed: "2026-09-04"
+  update_sources:
+    - name: ORCID
+      url: "https://orcid.org/0000-0002-7834-7536"
+    - name: Google Scholar
+      url: "https://scholar.google.com/citations?user=CKYZLxYAAAAJ&hl=en"
+    - name: arXiv author search
+      url: "https://arxiv.org/search/?query=George+Stepaniants&searchtype=author"
+    - name: NSF MSPRF award
+      url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2402074&HistoricalAwards=false"
+    - name: MIT thesis record
+      url: "https://dspace.mit.edu/handle/1721.1/155887"
+
+profile:
+  name: George Stepaniants
+  emails:
+    - gstepan@caltech.edu
+    - georgestepaniants@gmail.com
+  website: "https://georgestepaniants.com"
+  headline:
+    - NSF Postdoctoral Fellow, Caltech
+    - Incoming Assistant Professor, Cambridge
+  announcement: >-
+    Starting in October 2026, I will join the faculty at the University of Cambridge as an Assistant Professor in Mathematics of Information in the [Department of Applied Mathematics and Theoretical Physics (DAMTP)](https://www.damtp.cam.ac.uk/). I will spend the 2026-2027 academic year as visiting faculty at [New York University's Courant Institute](https://math.nyu.edu/).
+  biography:
+    - >-
+      I am an [NSF MSPRF](https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2402074&HistoricalAwards=false) postdoctoral fellow at the California Institute of Technology in the [Department of Computing and Mathematical Sciences](https://www.cms.caltech.edu/) working with [Prof. Andrew Stuart](http://stuart.caltech.edu/).
+    - >-
+      I received my PhD from the Massachusetts Institute of Technology (MIT) in 2024 in the [Department of Mathematics](https://math.mit.edu/) co-advised by [Prof. Philippe Rigollet](https://math.mit.edu/~rigollet/) and [Prof. Jörn Dunkel](https://math.mit.edu/~dunkel/) funded by the [NSF GRFP](https://www.nsf.gov/awardsearch/show-award/?AWD_ID=1745302) and MIT Presidential Fellowship. I was also part of the [Interdisciplinary Doctoral Program in Statistics (IDPS)](https://stat.mit.edu/academics/idps/) through the [Institute for Data, Systems, and Society (IDSS)](https://idss.mit.edu/). I received the [Lawrence D. Brown PhD Student Award](https://imstat.org/2025/04/02/preview-george-stepaniants-ims-lawrence-d-brown-phd-student-lecture/) in 2025 from the Institute of Mathematical Statistics for my statistical work on the optimal transport Gromov-Wasserstein method and its applications to metabolomics.
+    - >-
+      Prior to MIT, I graduated in 2019 from the University of Washington with a Bachelor of Science in Mathematics and Computer Science, where I performed research in the [Department of Applied Mathematics](https://amath.washington.edu/) with [Prof. Nathan Kutz](http://faculty.washington.edu/kutz/).
+  summary: >-
+    I develop data-driven methods to learn laws and relationships in scientific data, using foundations of machine learning, statistical theory, numerical analysis, and mathematical modeling to design approaches that succeed in data-limited regimes and embody domain-specific inductive biases. My teaching philosophy is inspired by my research, showing students how to discover mathematical ideas in field-specific literature, translate them into well-posed theories, and bring these theories to life as numerical algorithms and reproducible code.
+  research_areas:
+    - Applied and Computational Mathematics
+    - Statistical Theory and Methods
+    - High-Dimensional Statistics
+    - Machine Learning
+    - Scientific Computing
+    - Numerical Analysis
+    - Scientific ML
+    - Mechanics of Materials
+    - Fluid Dynamics
+    - Biophysics
+  research_mission:
+    question: How do we develop physically faithful models when data are collected from disparate sources, sample-limited and noisy, or partial observations of a larger system?
+    thrusts:
+      - label: I
+        lead: Development of optimal transport techniques for alignment and pooling of scientific data
+        detail: from disparate sources, with rigorous finite-sample guarantees
+      - label: II
+        lead: Advancement of inference methods to learn governing physical laws from data
+        detail: in noisy and data-sparse regimes, with theoretical approximation bounds and statistical rates
+      - label: III
+        lead: Design of memory-dependent (autoregressive) and higher-order models
+        detail: as a way of compensating for incomplete observability in time-dependent systems
+    closing: The methodological and theoretical developments in these three thrusts are guided by my work in specific application domains including biochemistry, materials science, and fluid mechanics.
+  teaching_philosophy:
+    intro: My goal as an educator is to teach students how to work on the interface of different disciplines and leverage tools from mathematical theory in physics, life sciences, probability theory, and statistics to solve their problems. My teaching philosophy is to train students to
+    principles:
+      - Identify promising ideas or undeveloped theories in domain-specific literature
+      - Translate these ideas into precise theoretical frameworks
+      - Bring these frameworks to life as numerical algorithms and reproducible code
+    closing: I am dedicated to mentoring and student outreach, and am taking important steps in education, research mentorship, and outreach in academia as well as in my local communities. I continue to expand my outreach and service in communities that historically have had less access to education in mathematics and science.
+
+employment:
+  - id: cambridge-assistant-professor
+    dates: "(To Begin) Oct 2026"
+    institution: University of Cambridge
+    role: Assistant Professor
+    title: Assistant Professor in Mathematics of Information
+    department: Department of Applied Mathematics and Theoretical Physics (DAMTP)
+  - id: nyu-visiting-faculty
+    dates: "(To Begin) Oct 2026"
+    institution: New York University
+    role: Visiting Faculty
+    department: Courant Institute School of Mathematics, Computing, and Data Science
+  - id: caltech-postdoc
+    dates: "Sep 2024 - Present"
+    institution: California Institute of Technology
+    role: Postdoctoral Scholar
+    title: NSF Mathematical Sciences Postdoctoral Research Fellow (MSPRF)
+    department: Department of Computing and Mathematical Sciences (CMS)
+    advisor:
+      name: Andrew M. Stuart
+      url: "http://stuart.caltech.edu/"
+
+education:
+  - id: mit-phd
+    dates: "Sep 2019 - Jun 2024"
+    institution: Massachusetts Institute of Technology
+    short_institution: MIT
+    degree: PhD
+    department: Department of Mathematics and Institute for Data, Systems, and Society (IDSS)
+    gpa: "4.9/5.0"
+    advisors:
+      - name: Philippe Rigollet
+        url: "https://math.mit.edu/~rigollet/"
+      - name: Jörn Dunkel
+        url: "https://math.mit.edu/~dunkel/"
+    thesis:
+      title: Inference from limited observations in statistical, dynamical, and functional problems
+      url: "https://dspace.mit.edu/handle/1721.1/155887"
+    site_summary: NSF GRFP Graduate Student in Mathematics and Statistics
+  - id: uw-bsc
+    dates: "Sep 2015 - Jun 2019"
+    institution: University of Washington
+    short_institution: UW
+    degree: BSc
+    department: Department of Mathematics and Department of Computer Science (double major)
+    gpa: "3.87/4.00"
+    advisors:
+      - name: Nathan Kutz
+        url: "http://faculty.washington.edu/kutz/"
+      - name: Bing Brunton
+        url: "https://www.bingbrunton.com/"
+    research_topic:
+      title: Inferring causal networks of dynamical systems through transient dynamics and perturbation
+      url: "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.102.042309"
+    site_summary: Math and Computer Science Double Major
+
+awards:
+  - id: simons-fellow-2026
+    name: Isaac Newton Institute 2026 Simons Fellow
+    dates: Aug 2026
+  - id: ilas-grant-2026
+    name: ILAS 2026 Early Career NSF Conference Grant Award Recipient
+    dates: Apr 2026
+  - id: nsf-msprf
+    name: NSF Mathematical Sciences Postdoctoral Research Fellowship
+    short_name: NSF Mathematical Sciences Postdoctoral Research Fellowship (MSPRF)
+    dates: Sep 2024 - Current
+    award_number: "2402074"
+    url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2402074&HistoricalAwards=false"
+  - id: ims-brown-award
+    name: IMS Lawrence D. Brown Ph.D. Student Award Recipient
+    dates: Sep 2024
+    note: 3 recipients nationwide
+    url: "https://imstat.org/wp-content/uploads/2025/02/Bulletin54_3-embargo.pdf"
+  - id: nsf-grfp
+    name: NSF Graduate Research Fellowship
+    short_name: NSF Graduate Research Fellowship (GRFP)
+    dates: Jun 2019 - Jun 2024
+    award_number: "1745302"
+    url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1745302"
+  - id: siam-travel-2023
+    name: SIAM Student Travel Award
+    dates: Dec 2023
+  - id: gulbenkian-grant-2023
+    name: Calouste Gulbenkian Foundation Short Term Conference and Travel Grant
+    dates: Jun 2023
+  - id: mit-presidential-fellowship
+    name: MIT Presidential Fellowship
+    dates: Sep 2019 - Jun 2020
+  - id: phi-beta-kappa
+    name: Phi Beta Kappa Honors Society Member
+    dates: Jun 2019
+  - id: mary-gates-scholarship
+    name: Mary Gates Research Scholarship (merit-based)
+    dates: Jun 2019
+  - id: uw-deans-list
+    name: University of Washington Dean's List
+    dates: Sep 2015 - Jun 2019
+  - id: uw-academy
+    name: Early acceptance to University of Washington (UW Academy)
+    dates: Sep 2015
+
+publications:
+  - id: mit-thesis
+    category: thesis
+    title: Inference from Limited Observations in Statistical, Dynamical, and Functional Problems
+    authors: [George Stepaniants]
+    venue: Massachusetts Institute of Technology
+    citation_detail: "(2024)."
+    year: 2024
+    url: "https://dspace.mit.edu/handle/1721.1/155887?show=full"
+    research_card: false
+  - id: berenstein-counterexample
+    category: preprint
+    title: A computer-assisted counterexample to the planar Berenstein conjecture
+    authors: [Matthew J. Colbrook, Siavash Sadeghi, George Stepaniants]
+    venue: "arXiv preprint arXiv:2608.08953"
+    citation_detail: "(2026)."
+    card_venue: arXiv preprint
+    year: 2026
+    url: "https://arxiv.org/abs/2608.08953"
+    published_date: August 9, 2026
+    # Figure 1, arXiv:2608.08953v1, page 3. Captured from the PDF at 240 dpi.
+    image: berenstein.png
+    thumbnail:
+      crop: [14, 8, 774, 648]
+      padding: 8
+    image_alt: Sign-changing eigenfunction on a noncircular domain with thirteen-fold rotational symmetry, with nodal curves and a color scale
+    image_caption: "Figure 1. Numerical approximation to the sign-changing eigenfunction on the Berenstein counterexample domain."
+    groups: [de]
+    research_card: true
+    abstract_label: Summary
+    abstract: >-
+      We construct a noncircular, simply connected planar domain with an analytic boundary that supports a sign-changing Helmholtz eigenfunction with zero boundary values and a constant nonzero normal derivative. This gives a counterexample to the unrestricted planar Berenstein conjecture. The domain has thirteen-fold rotational symmetry and is not centrally symmetric. Building on the conformal and disk-polynomial framework developed for the Pompeiu and Schiffer problems, we formulate a coupled interior-boundary system on the unit disc. Bounds on the infinite-dimensional tail and an interval-arithmetic verification of a Newton-Kantorovich argument establish the existence of an exact solution near the computed approximation.
+    keywords: [Berenstein conjecture, overdetermined eigenvalue problems, spectral geometry, computer-assisted proof, interval arithmetic]
+  - id: forsythe-conjecture
+    category: preprint
+    title: A Proof of the Forsythe Conjecture for the Two-Step Restarted Conjugate Gradient Method
+    authors: [Matthew J. Colbrook, George Stepaniants, Alex Townsend]
+    venue: "arXiv preprint arXiv:2608.02852"
+    citation_detail: "(2026)."
+    card_venue: arXiv preprint
+    year: 2026
+    url: "https://arxiv.org/abs/2608.02852"
+    published_date: August 3, 2026
+    # Figure 1, arXiv:2608.02852v1, page 4. Captured from the PDF at 240 dpi.
+    image: forsythe.png
+    thumbnail:
+      crop: [14, 4, 365, 284]
+      padding: 8
+      alt: Even and odd restarted conjugate-gradient trajectories approaching two limiting directions
+    image_alt: Even and odd restarted conjugate-gradient trajectories approach two limiting directions, while their distances to those limits decay to roundoff
+    image_caption: "Figure 1. Two-step restarted conjugate gradients: residual trajectories and convergence to the even and odd limiting states."
+    groups: [other]
+    research_card: true
+    abstract_label: Summary
+    abstract: >-
+      We resolve the two-step case of Forsythe's 1968 conjecture on the asymptotic behavior of restarted conjugate gradients. For a symmetric positive definite system, restarting after every two iterations produces normalized residuals whose even and odd subsequences each approach a limit, provided the iteration does not terminate. Thus the residual directions asymptotically settle into a two-cycle.
+    keywords: [conjugate gradient method, restarted Krylov method, Forsythe conjecture, orthogonal polynomials, asymptotic residual directions]
+  - id: pompeiu-schiffer-counterexample
+    category: preprint
+    title: A computer-assisted counterexample to the planar Pompeiu and Schiffer conjectures
+    authors: [Matthew J. Colbrook, George Stepaniants]
+    venue: "arXiv preprint arXiv:2608.01579"
+    citation_detail: "(2026)."
+    card_venue: arXiv preprint
+    year: 2026
+    url: "https://arxiv.org/abs/2608.01579"
+    published_date: August 3, 2026
+    # Figure 1, arXiv:2608.01579v1, page 3. Captured from the PDF at 240 dpi.
+    image: pompeiu_schiffer.png
+    thumbnail:
+      crop: [5, 8, 785, 758]
+      padding: 14
+    image_alt: Ten-lobed, noncircular shortcake-shaped domain forming a counterexample to the planar Pompeiu and Schiffer conjectures
+    image_caption: "Figure 1. Boundary of the finite conformal approximation to the ten-lobed counterexample domain."
+    groups: [de]
+    research_card: true
+    abstract_label: Summary
+    abstract: >-
+      We give a computer-assisted construction of a noncircular, simply connected planar domain with an analytic boundary and a nonconstant Neumann eigenfunction that is constant on the boundary. The domain disproves the planar Schiffer conjecture and, through Green's identity, also the corresponding Pompeiu conjecture. Its boundary has ten-fold rotational symmetry and closely follows an explicitly specified polynomial conformal map. Transferring the problem to the unit disc yields an operator equation in a disk-polynomial basis. Rigorous coefficient estimates and control of the infinite-dimensional tails establish an exact solution near the numerical approximation.
+    keywords: [Pompeiu problem, Schiffer conjecture, spectral geometry, conformal mapping, computer-assisted proof]
+  - id: memory-material-laws
+    category: journal
+    title: Learning Memory and Material Dependent Constitutive Laws
+    authors: [Kaushik Bhattacharya, Lianghao Cao, George Stepaniants, Andrew M. Stuart, Margaret Trautner]
+    alphabetical_order: true
+    venue: The SMAI Journal of Computational Mathematics
+    citation_detail: "12 (2026): 219-267."
+    card_venue: SMAI Journal of Computational Mathematics
+    year: 2026
+    url: "https://smai-jcm.centre-mersenne.org/articles/10.5802/smai-jcm.148/"
+    published_date: June 12, 2026
+    image: mem_mat.png
+    thumbnail:
+      crop: [360, 22, 664, 456]
+      padding: 8
+      alt: Stress-response heatmaps comparing a model without memory with the learned memory-dependent response
+    groups: [de, nn]
+    research_card: true
+    abstract: >-
+      We propose and study a neural operator framework for learning memory- and material microstructure-dependent constitutive laws for heterogeneous materials. We work in the two-scale setting where homogenization theory provides a systematic approach to deriving macroscale constitutive laws, obviating the need to resolve complex microstructure repeatedly. However, the unit cell problems defining these constitutive models are typically not amenable to explicit evaluation. It is therefore of interest to learn constitutive models from data generated by the unit cell problem. Our proposed framework models homogenized constitutive laws with both memory- and microstructure-dependence through the use of Markovian recurrent and Fourier neural operators. The homogenization problem for Kelvin-Voigt viscoelastic materials is studied to provide firm theoretical foundations for our model. The theoretical properties of the cell problem in this Kelvin-Voigt setting motivate the proposed learning framework; and are also used to prove a universal approximation theorem for the learned macroscale constitutive model. Numerical experiments show that the proposed learning framework accurately learns memory- and microstructure-dependent viscoelastic and elasto-viscoplastic constitutive models, beyond the setting of the theory. Furthermore, we show that the learned constitutive models can be successfully deployed in macroscale simulation of material deformation for different microstructures without retraining.
+    keywords: [constitutive modeling, homogenization, memory, microstructure, Kelvin-Voigt, viscoelasticity, elasto-viscoplasticity, neural operator]
+  - id: spectral-volterra
+    category: journal
+    title: A Spectral Theory of Scalar Volterra Equations
+    authors: [David Darrow, George Stepaniants]
+    alphabetical_order: true
+    venue: Communications of the American Mathematical Society
+    citation_detail: "6 (2026): 634-725."
+    card_venue: Communications of the AMS
+    year: 2026
+    url: "https://doi.org/10.1090/cams/64"
+    published_date: May 20, 2026
+    image: spectral_volterra.png
+    thumbnail:
+      crop: [320, 30, 835, 610]
+      padding: 8
+      alt: Three spectral distributions and their computed and analytic Hilbert transforms
+    groups: [de]
+    research_card: true
+    abstract: >-
+      This work aims to bridge the gap between pure and applied research on scalar, linear Volterra equations by examining five major classes: integral and integro-differential equations with completely monotone kernels (viscoelastic models); equations with positive definite kernels (partially observed quantum systems); difference equations with discrete, positive definite kernels; a generalized class of delay differential equations; and a generalized class of fractional differential equations. We develop a general, spectral theory that provides a system of correspondences between these disparate domains. As a result, we see how 'interconversion' (operator inversion) arises as a natural, continuous involution within each class, yielding a plethora of novel formulas for analytical solutions of such equations. This spectral theory unifies and extends existing results in viscoelasticity, signal processing, and analysis. It also introduces a geometric construction of the regularized Hilbert transform, revealing a fundamental connection to fractional and delay differential equations. Finally, it offers a practical toolbox for Volterra equations of all classes, reducing many to pen-and-paper calculations and introducing a powerful spectral approach for general Volterra equations based on rational approximation.
+    keywords: [Volterra integral equations, constitutive modeling, fractional derivatives, delay differential equations]
+  - id: covariance-alignment
+    category: journal
+    title: "Covariance alignment: from maximum likelihood estimation to Gromov-Wasserstein"
+    authors: [Yanjun Han, Philippe Rigollet, George Stepaniants]
+    alphabetical_order: true
+    venue: SIAM Journal on Mathematics of Data Science
+    citation_detail: "7.3 (2025): 1491-1513."
+    card_venue: SIMODS
+    year: 2025
+    url: "https://epubs.siam.org/doi/full/10.1137/24M1682841"
+    published_date: September 17, 2025
+    image: mle_gw.png
+    thumbnail:
+      crop: [532, 18, 738, 538]
+      padding: 8
+      alt: Fiedler and Gromov-Wasserstein covariance estimates alongside the true covariance
+    groups: [ot]
+    research_card: true
+    abstract: >-
+      Feature alignment methods are used in many scientific disciplines for data pooling, annotation, and comparison. As an instance of a permutation learning problem, feature alignment presents significant statistical and computational challenges. In this work, we propose the covariance alignment model to study and compare various alignment methods and establish a minimax lower bound for covariance alignment that has a non-standard dimension scaling because of the presence of a nuisance parameter. This lower bound is in fact minimax optimal and is achieved by a natural quasi MLE. However, this estimator involves a search over all permutations which is computationally infeasible even when the problem has moderate size. To overcome this limitation, we show that the celebrated Gromov-Wasserstein algorithm from optimal transport which is more amenable to fast implementation even on large-scale problems is also minimax optimal. These results give the first statistical justification for the deployment of the Gromov-Wasserstein algorithm in practice.
+    keywords: [Feature alignment, graph matching, optimal transport, Gromov-Wasserstein]
+  - id: hidden-dynamics
+    category: journal
+    title: Discovering dynamics and parameters of nonlinear oscillatory and chaotic systems from partial observations
+    authors: [George Stepaniants, Alasdair D. Hastewell, Dominic J. Skinner, Jan F. Totz, Jörn Dunkel]
+    equal_contribution: [George Stepaniants, Alasdair D. Hastewell]
+    venue: Physical Review Research
+    citation_detail: "6, 043062 (2024)."
+    card_venue: PRR
+    year: 2024
+    url: "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.6.043062"
+    published_date: October 23, 2024
+    image: hdi.png
+    thumbnail:
+      crop: [14, 8, 686, 496]
+      padding: 8
+      alt: Reconstructed time series, discovered coefficients, and a Lorenz attractor
+    groups: [de]
+    research_card: true
+    abstract: >-
+      Despite rapid progress in data acquisition techniques, many complex physical, chemical, and biological systems remain only partially observable, thus posing the challenge to identify valid theoretical models and estimate their parameters from an incomplete set of experimentally accessible time series. Here, we combine sensitivity methods and ranked-choice model selection to construct an automated hidden dynamics inference framework that can discover predictive nonlinear dynamical models for both observable and latent variables from noise-corrupted incomplete data in oscillatory and chaotic systems. After validating the framework for prototypical FitzHugh-Nagumo oscillations, we demonstrate its applicability to experimental data from squid neuron activity measurements and Belousov-Zhabotinsky reactions, as well as to the Lorenz system in the chaotic regime.
+    keywords: [Dynamical systems, hidden variables, sensitivity methods, nonlinear oscillations, chaotic dynamics]
+  - id: metabolomics-alignment
+    category: journal
+    title: Optimal transport for automatic alignment of untargeted metabolomic data
+    authors: [Marie Breeur, George Stepaniants, Pekka Keski-Rahkonen, Philippe Rigollet, Vivian Viallon]
+    equal_contribution: [Marie Breeur, George Stepaniants]
+    venue: eLife
+    citation_detail: "12:RP91597 (2024)."
+    card_venue: eLife
+    year: 2024
+    url: "https://elifesciences.org/articles/91597"
+    published_date: June 18, 2024
+    image: gw.png
+    thumbnail:
+      crop: [24, 38, 1116, 580]
+      padding: 8
+      alt: Two metabolomics datasets aligned through a constrained Gromov-Wasserstein coupling
+    groups: [ot]
+    research_card: true
+    abstract: >-
+      Untargeted metabolomic profiling through liquid chromatography-mass spectrometry (LC-MS) measures a vast array of metabolites within biospecimens, advancing drug development, disease diagnosis, and risk prediction. However, the low throughput of LC-MS poses a major challenge for biomarker discovery, annotation, and experimental comparison, necessitating the merging of multiple datasets. Current data pooling methods encounter practical limitations due to their vulnerability to data variations and hyperparameter dependence. Here, we introduce GromovMatcher, a flexible and user-friendly algorithm that automatically combines LC-MS datasets using optimal transport. By capitalizing on feature intensity correlation structures, GromovMatcher delivers superior alignment accuracy and robustness compared to existing approaches. This algorithm scales to thousands of features requiring minimal hyperparameter tuning. Manually curated datasets for validating alignment algorithms are limited in the field of untargeted metabolomics, and hence we develop a dataset split procedure to generate pairs of validation datasets to test the alignments produced by GromovMatcher and other methods. Applying our method to experimental patient studies of liver and pancreatic cancer, we discover shared metabolic features related to patient alcohol intake, demonstrating how GromovMatcher facilitates the search for biomarkers associated with lifestyle risk factors linked to several cancer types.
+    keywords: [Gromov-Wasserstein, optimal transport, metabolomics, data integration]
+  - id: pde-rkhs
+    category: journal
+    title: Learning partial differential equations in reproducing kernel Hilbert spaces
+    authors: [George Stepaniants]
+    venue: Journal of Machine Learning Research
+    citation_detail: "24.86 (2023): 1-72."
+    card_venue: JMLR
+    year: 2023
+    url: "https://jmlr.org/papers/v24/21-1363.html"
+    published_date: January 25, 2023
+    image: pde_rkhs.png
+    thumbnail:
+      crop: [754, 10, 705, 612]
+      padding: 8
+      alt: Smooth RKHS estimate of the Green's function, with axes and a color scale
+    groups: [de]
+    research_card: true
+    abstract: >-
+      We propose a new data-driven approach for learning the fundamental solutions (Green's functions) of various linear partial differential equations (PDEs) given sample pairs of input-output functions. Building off the theory of functional linear regression (FLR), we estimate the best-fit Green's function and bias term of the fundamental solution in a reproducing kernel Hilbert space (RKHS) which allows us to regularize their smoothness and impose various structural constraints. We derive a general representer theorem for operator RKHSs to approximate the original infinite-dimensional regression problem by a finite-dimensional one, reducing the search space to a parametric class of Green's functions. In order to study the prediction error of our Green's function estimator, we extend prior results on FLR with scalar outputs to the case with functional outputs. Finally, we demonstrate our method on several linear PDEs including the Poisson, Helmholtz, Schrödinger, Fokker-Planck, and heat equation. We highlight its robustness to noise as well as its ability to generalize to new data with varying degrees of smoothness and mesh discretization without any additional training.
+    keywords: [Green's functions, partial differential equations, reproducing kernel Hilbert spaces, functional linear regression, simultaneous diagonalization]
+  - id: gulp
+    category: conference
+    title: "GULP: a prediction-based metric between representations"
+    authors: [Enric Boix-Adserà, Hannah Lawrence, George Stepaniants, Philippe Rigollet]
+    venue: Advances in Neural Information Processing Systems
+    citation_detail: "(2022)."
+    card_venue: NeurIPS
+    year: 2022
+    url: "https://arxiv.org/abs/2210.06545"
+    published_date: October 12, 2022
+    image: gulp.png
+    thumbnail:
+      crop: [457, 31, 564, 321]
+      padding: 8
+      alt: GULP representation comparisons at three regularization levels, colored by network width and depth
+    groups: [nn]
+    research_card: true
+    abstract: >-
+      Comparing the representations learned by different neural networks has recently emerged as a key tool to understand various architectures and ultimately optimize them. In this work, we introduce GULP, a family of distance measures between representations that is explicitly motivated by downstream predictive tasks. By construction, GULP provides uniform control over the difference in prediction performance between two representations, with respect to regularized linear prediction tasks. Moreover, it satisfies several desirable structural properties, such as the triangle inequality and invariance under orthogonal transformations, and thus lends itself to data embedding and visualization. We extensively evaluate GULP relative to other methods, and demonstrate that it correctly differentiates between architecture families, converges over the course of training, and captures generalization performance on downstream linear tasks.
+    keywords: [representations, CCA, CKA, transfer learning, neural networks]
+  - id: wasserstein-splines
+    category: conference
+    title: Fast and smooth interpolation on Wasserstein space
+    authors: [Sinho Chewi, Julien Clancy, Thibaut Le Gouic, Philippe Rigollet, George Stepaniants, Austin Stromme]
+    alphabetical_order: true
+    venue: International Conference on Artificial Intelligence and Statistics
+    citation_detail: "PMLR (2021)."
+    card_venue: AISTATS
+    year: 2021
+    url: "https://proceedings.mlr.press/v130/chewi21a"
+    published_date: March 18, 2021
+    image: splines.png
+    thumbnail:
+      crop: [40, 77, 1000, 423]
+      padding: 12
+      alt: Probability distributions interpolated along a Wasserstein spline
+    groups: [ot]
+    research_card: true
+    abstract: >-
+      We propose a new method for smoothly interpolating probability measures using the geometry of optimal transport. To that end, we reduce this problem to the classical Euclidean setting, allowing us to directly leverage the extensive toolbox of spline interpolation. Unlike previous approaches to measure-valued splines, our interpolated curves (i) have a clear interpretation as governing particle flows, which is natural for applications, and (ii) come with the first approximation guarantees on Wasserstein space. Finally, we demonstrate the broad applicability of our interpolation methodology by fitting surfaces of measures using thin-plate splines.
+    keywords: [optimal transport, spline interpolation, thin-plate splines]
+  - id: causal-networks
+    category: journal
+    title: Inferring causal networks of dynamical systems through transient dynamics and perturbation
+    authors: [George Stepaniants, Bingni W. Brunton, J. Nathan Kutz]
+    venue: Physical Review E
+    citation_detail: "102.4 (2020): 042309."
+    card_venue: Physical Review E
+    year: 2020
+    url: "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.102.042309"
+    published_date: October 26, 2020
+    image: netinf.png
+    thumbnail:
+      crop: [18, 12, 570, 389]
+      padding: 8
+      alt: Granger-causality accuracy and spectra for three network models
+    groups: [de]
+    research_card: true
+    abstract: >-
+      Inferring causal relations from time series measurements is an ill-posed mathematical problem, where typically an infinite number of potential solutions can reproduce the given data. We explore in depth a strategy to disambiguate between possible underlying causal networks by perturbing the network, where the forcings are either targeted or applied at random. The resulting transient dynamics provide the critical information necessary to infer causality. Two methods are shown to provide accurate causal reconstructions: Granger causality (GC) with perturbations, and our proposed perturbation cascade inference (PCI). Perturbed GC is capable of inferring smaller networks under low coupling strength regimes. Our proposed PCI method demonstrated consistently strong performance in inferring causal relations for small (2-5 node) and large (10-20 node) networks, with both linear and nonlinear dynamics. Thus, the ability to apply a large and diverse set of perturbations to the network is critical for successfully and accurately determining causal relations and disambiguating between various viable networks.
+    keywords: [network inference, coupled oscillators, Granger causality, CCA]
+  - id: sieve
+    category: preparation
+    title: "SIEVE: Spectral integral transforms, poly-exponential approximants, and Volterra equations"
+    authors: [David Darrow, George Stepaniants, Chris Camaño]
+    equal_contribution: [David Darrow, George Stepaniants]
+    year: 2026
+    research_card: false
+  - id: lebesgue-report
+    category: report
+    title: The Lebesgue Integral, Chebyshev's Inequality, and the Weierstrass Approximation Theorem
+    authors: [George Stepaniants]
+    venue: Undergraduate Academic Report (Math 33X, University of Washington)
+    citation_detail: "(2017)."
+    card_venue: Undergraduate Academic Report
+    year: 2017
+    url: "https://sites.math.washington.edu/~morrow/336_17/papers17/george.pdf"
+    published_date: June 6, 2017
+    image: 33X.png
+    thumbnail:
+      crop: [110, 22, 633, 476]
+      padding: 12
+      alt: Title and table of contents of the report on Lebesgue integration
+    groups: [other]
+    resume: false
+    site_cv: false
+    research_card: true
+    abstract: >-
+      This paper presents Bernstein's probabilistic proof of the Weierstrass Approximation Theorem. It develops the required foundations in measure theory, Lebesgue integration, probability distributions, and Chebyshev's inequality before applying them to polynomial approximation.
+    keywords: [Lebesgue integral, Chebyshev's inequality, Weierstrass approximation theorem]
+
+talks:
+  - id: symposium-homogenization-2025
+    type: organized
+    title: Minisymposium on Data-Driven Methods for Multiscale Modeling and Homogenization
+    event: SIAM Conference on Computational Science and Engineering
+    location: Fort Worth
+    date: March 2025
+  - id: symposium-partial-observations-2024
+    type: organized
+    title: Minisymposium on Data-Driven Learning of Dynamical Systems from Partial Observations
+    event: SIAM Conference on Mathematics of Data Science
+    location: Atlanta
+    date: October 2024
+  - id: newton-volterra-2026
+    type: invited
+    title: Volterra Integral Equations and Memory Dependent Constitutive Laws
+    event: Isaac Newton Institute
+    location: Cambridge
+    date: August 2026
+  - id: ilas-neural-operators-2026
+    type: invited
+    title: Learning Material Constitutive Laws with Neural Operators
+    event: ILAS
+    location: Virginia Tech
+    date: May 2026
+  - id: uci-volterra-2025
+    type: invited
+    title: Volterra Integral Equations and Memory Dependent Constitutive Laws
+    event: UC Irvine Applied & Computational Math Seminar
+    location: Irvine
+    date: October 2025
+  - id: manchester-material-laws-2025
+    type: invited
+    title: Learning Memory and Material Dependent Constitutive Laws
+    event: Surrogates and Dimension Reduction in Scientific Machine Learning
+    location: Manchester University
+    date: September 2025
+  - id: jsm-covariance-2025
+    type: invited
+    title: "Alignment of Untargeted Data through their Covariances: A Novel Perspective on a Classical Tool in Optimal Transport"
+    event: Joint Statistics Meeting
+    location: Nashville
+    date: August 2025
+    note: One of 3 PhD students selected for the prestigious IMS Lawrence D. Brown PhD Student Award
+    url: "https://imstat.org/2025/04/02/preview-george-stepaniants-ims-lawrence-d-brown-phd-student-lecture/"
+  - id: birs-volterra-2025
+    type: invited
+    title: "A Spectral Theory of Volterra Equations: Applications to Learning of Material Laws"
+    event: Efficient and Reliable Deep Learning Methods and their Scientific Applications
+    location: Banff BIRS Centre
+    date: June 2025
+    emphasize_location: true
+  - id: siam-ds-hidden-2025
+    type: invited
+    title: Learning Dynamics of Hidden Variables in Multiscale Viscoelastic Materials
+    event: SIAM Conference on Applications of Dynamical Systems
+    location: Denver
+    date: May 2025
+  - id: dartmouth-volterra-2025
+    type: invited
+    title: A Spectral Theory of Scalar Volterra Equations
+    event: Dartmouth Applied & Computational Math Seminar
+    location: Dartmouth
+    date: March 2025
+  - id: mit-volterra-2025
+    type: invited
+    title: A Spectral Theory of Scalar Volterra Equations
+    event: MIT Applied Math Physical Mathematics Seminar
+    location: Cambridge
+    date: March 2025
+  - id: kyoto-material-laws-2025
+    type: invited
+    title: Learning Memory and Material Dependent Constitutive Laws
+    event: Differential Equations for Data Science
+    location: Kyoto University
+    date: February 2025
+  - id: fields-hidden-dynamics-2024
+    type: invited
+    title: Discovering dynamics and parameters of nonlinear oscillatory and chaotic systems from partial observations
+    event: Fourth Symposium on Machine Learning and Dynamical Systems
+    location: Fields Institute
+    date: July 2024
+    emphasize_location: true
+  - id: yale-covariance-2024
+    type: invited
+    title: Covariance Alignment with Optimal Transport
+    event: Yale Applied Mathematics Seminar
+    location: New Haven
+    date: April 2024
+  - id: siam-uq-metabolomics-2024
+    type: invited
+    title: Gromov-Wasserstein Theory and Application to Metabolomics
+    event: SIAM Conference on Uncertainty Quantification
+    location: Trieste, Italy
+    date: February 2024
+  - id: armenia-gw-2023
+    type: invited
+    title: Gromov-Wasserstein Theory and Application to Metabolomics
+    event: Statistics and Learning Theory Summer School
+    location: Tsaghkadzor, Armenia
+    date: July 2023
+    note: One of 7 invited speakers
+  - id: harvard-metabolomics-2023
+    type: invited
+    title: Optimal transport for automatic alignment of untargeted metabolomic data
+    event: Harvard Applied Math Graduate Student Seminar
+    location: Cambridge
+    date: March 2023
+  - id: siam-mds-pde-2022
+    type: invited
+    title: Learning PDEs in a Reproducing Kernel Hilbert Space
+    event: SIAM Conference on Mathematics of Data Science
+    location: San Diego
+    date: September 2022
+  - id: cirm-pde-2021
+    type: invited
+    title: Learning PDEs in a Reproducing Kernel Hilbert Space
+    event: Meeting on Mathematical Statistics
+    location: CIRM, Marseille, France
+    date: December 2021
+    note: Only 3 graduate student speakers invited
+    emphasize_location: true
+  - id: dynamics-days-hidden-2024
+    type: contributed
+    title: Discovering dynamics and parameters of nonlinear oscillatory and chaotic systems from partial observations
+    event: Dynamics Days
+    location: UC Davis
+    date: January 2024
+  - id: aps-hidden-2022
+    type: contributed
+    title: Learning and predicting complex systems dynamics from single-variable observations
+    event: APS March Meeting
+    location: Chicago
+    date: March 2022
+  - id: lids-pde-2021
+    type: contributed
+    title: Learning PDEs in a Reproducing Kernel Hilbert Space
+    event: LIDS Stats & Tea
+    location: MIT
+    date: December 2021
+  - id: econometrics-networks-2021
+    type: contributed
+    title: Inferring causal networks of dynamical systems through transient dynamics and perturbation
+    event: Econometrics Lunch
+    location: MIT
+    date: December 2021
+  - id: ucla-fungal-2018
+    type: contributed
+    title: Fusion of Genetically Incompatible Fungal Cells
+    event: UCLA Computational and Applied Math REU Presentation
+    location: IPAM
+    date: August 2018
+  - id: matdat-aneurysms-2018
+    type: contributed
+    title: Quantifying Rupture Risk of Brain Aneurysms
+    event: "MATDAT18: NSF Materials and Data Science Hackathon"
+    location: Alexandria
+    date: June 2018
+    url: "https://matdat18.wordpress.ncsu.edu/files/2018/06/Team12.pdf"
+  - id: ai2-hyperparameters-2017
+    type: contributed
+    title: Hyperparameter Selection
+    event: AI2 Research Internship Final Presentation
+    location: Seattle
+    date: August 2017
+  - id: ai2-beaker-2017
+    type: contributed
+    title: Beaker Experimentation Platform
+    event: AI2 Research Internship Midterm Presentation
+    location: Seattle
+    date: August 2017
+  - id: pfizer-imaging-2016
+    type: contributed
+    title: Image Analysis in Parkinson's Research
+    event: Pfizer Research Internship Final Presentation
+    location: Cambridge
+    date: August 2016
+  - id: cornell-covariance-poster-2023
+    type: poster
+    title: "Covariance alignment: from maximum-likelihood estimation to Gromov-Wasserstein"
+    event: Cornell ORIE Young Researchers Workshop
+    location: Cornell
+    date: October 2023
+  - id: uw-networks-poster-2019
+    type: poster
+    title: Inferring causal networks of dynamical systems through transient dynamics and perturbation
+    event: Undergraduate Research Symposium
+    location: UW
+    date: June 2019
+
+teaching:
+  - id: caltech-acm270
+    category: instructor
+    code: ACM 270
+    institution: California Institute of Technology
+    institution_short: Caltech
+    role: Instructor of Record
+    term: Spring 2025
+    title: Data-Driven Modeling of Dynamical Systems
+    url: "https://schedules.caltech.edu/syllabi/ACM270_SP2425.pdf"
+    resume_subtitle: Designer and Instructor of New Course for Data-Driven Modeling of Dynamical Systems
+    responsibility: Two weekly 1.5 hour classes with 30+ students, with final presentations and projects. Designed all course content and lectures and graded final projects.
+    resume_detail: Two weekly 1.5 hour classes with 30+ students, with final presentations and projects, unifying topics in system identification, sparse model inference, Koopman theory, adjoint methods, data assimilation, and scientific ML. Turning class content and lectures into a class text.
+    overview: >-
+      Dynamical systems are a ubiquitous tool for modeling time-dependent processes in science and engineering. Progress in machine learning methods in the past two decades has been tremendous, giving rise to the field of scientific machine learning which combines data-driven methods with physical modeling techniques. This course covers pivotal data-driven algorithms and model architectures for more accurate model inference, forecasting, and analysis of dynamical data, with special focus on partially observed systems. Topics include system identification, Koopman theory, sparse model inference, neural ODEs, signature transforms, autoregressive models, Volterra equations, Mori-Zwanzig formalism, and higher-order models.
+  - id: mit-18032
+    category: teaching_assistant
+    code: MIT 18.032
+    institution: Massachusetts Institute of Technology
+    institution_short: MIT
+    role: Teaching Assistant
+    term: Spring 2022
+    title: Differential Equations
+    url: "http://student.mit.edu/catalog/search.cgi?search=18.032&style=verbatim"
+    resume_subtitle: Teaching Assistant for Differential Equations (theory focused)
+    responsibility: Two weekly 1 hour recitations with 16 students, including grading of homeworks/finals and proctoring final exams.
+    resume_detail: Two weekly 1 hour recitations with 16 students, including grading of homeworks/finals and proctoring final exams. Covering existence and uniqueness theory (Cauchy-Lipschitz Theorem, Picard iterations), control and comparison of solutions, maximal solutions, Grönwall's Lemma, multivariable ODEs, and fixed point stability.
+    overview: >-
+      The class 18.032 is centered around ordinary differential equations with more emphasis on theory than 18.03. Topics include first and higher-order ODEs, existence and uniqueness of solutions, Picard iterations, Euler schemes, control and comparison of solutions, maximal solutions, dependence on initial conditions, Grönwall's Lemma, multivariable ODEs, and fixed point stability.
+  - id: mit-18600
+    category: teaching_assistant
+    code: MIT 18.600
+    institution: Massachusetts Institute of Technology
+    institution_short: MIT
+    role: Teaching Assistant
+    term: Fall 2021
+    title: Introduction to Probability
+    url: "http://student.mit.edu/catalog/search.cgi?search=18.600&style=verbatim"
+    resume_subtitle: Teaching Assistant for Introduction to Probability
+    responsibility: Two weekly 1 hour recitations with 40 students, including grading of homeworks and finals.
+    resume_detail: Two weekly 1 hour recitations with 40 students, including grading of homeworks and finals. Covering probability spaces, random variables, classes of distributions, Bayes theorem, Chebyshev inequality, law of large numbers, and central limit theorems.
+    overview: >-
+      The class 18.600 is an introductory probability theory course. Topics include probability spaces, random variables, distribution functions, standard discrete and continuous distributions, conditional probability, Bayes theorem, joint distributions, Chebyshev inequality, the law of large numbers, and the central limit theorem.
+
+mentoring:
+  - id: surf-syntko-2025
+    program: SURF
+    institution: California Institute of Technology
+    dates: Summer 2025
+    headline: Undergraduate Research Mentor for Vladislav Syntko (Maastricht University, Netherlands)
+    project: A Signature-Based Approach for System Identification and Control
+    description: Applications and theory for signature transform methods in open-loop control of dynamical systems.
+  - id: wave-tolbert-2025
+    program: WAVE
+    institution: California Institute of Technology
+    dates: Summer 2025
+    headline: Undergraduate Research Mentor for Owen Tolbert (University of Maryland Baltimore County)
+    project: A Study of Network Inference Methods
+    description: Information-theoretic and deep learning methods for inference of networked dynamical systems.
+  - id: mcm-2024
+    program: MCM
+    institution: California Institute of Technology
+    dates: Fall 2024
+    headline: Trained three undergraduate Caltech teams for the Mathematical Contest in Modeling (MCM), coaching and solving practice problems over the course of several months
+    bullets:
+      - "(Honorable Mention) Gautham Kappaganthula, Constantin Cedillo-Vayson de Pradenne, Colin La"
+      - "(Successful Participant) Joseph Pieper, Sujay Champati, Dhruv Verma"
+      - "(Successful Participant) James Hou, Aman Burman, Abhiram Cherukupalli"
+  - id: mentor-zhou-2024
+    program: Mentor
+    institution: California Institute of Technology
+    dates: Fall 2024
+    headline: Undergraduate Research Mentor for Zixiang Zhou (University of Southern California)
+    description: Mentored research reading and project in data-driven dynamical systems inference algorithms based on the method of characteristics.
+  - id: spur-liu-2023
+    program: SPUR+
+    institution: Massachusetts Institute of Technology
+    dates: Summer 2023 - Fall 2023
+    headline: Undergraduate Research Mentor for Elaine Liu (Massachusetts Institute of Technology)
+    project: Modeling International Trade and Tariffs
+    description: Study of large trade and tariffs dataset across 200 world countries, investigating the use of spectral and graph wavelet decompositions for analysis of temporal trade network data.
+    url: "https://math.mit.edu/documents/spur/2023/Liu.pdf"
+  - id: drp-2023
+    program: DRP
+    institution: Massachusetts Institute of Technology
+    dates: Summer 2023
+    headline: Directed Reading Program with Loreta Arzumanyan and Joshua Curtis Kuffour (Massachusetts Institute of Technology)
+    description: Guided reading of two undergraduate students in the graduate dynamical systems text "Stability, Instability and Chaos" by Paul Glendinning over the course of the summer. Prepared students to present their knowledge of the text in a final presentation at the end of summer.
+  - id: mentor-liveoak-chen-2023
+    program: Mentor
+    institution: Massachusetts Institute of Technology
+    dates: Summer 2023
+    headline: Undergraduate Research Mentor for Donald J. Liveoak and Hanna Chen (Massachusetts Institute of Technology)
+    description: Guided research readings with two MIT undergraduates on optimal transport and adjoint methods for inference of stochastic dynamical systems and networked dynamical systems.
+  - id: urop-darrow-2021
+    program: UROP
+    institution: Massachusetts Institute of Technology
+    dates: Fall 2021 - Spring 2022
+    headline: Undergraduate Research Mentor for David Darrow (Massachusetts Institute of Technology)
+    project: Optimal Transport for Protein Folding
+    description: Studying how optimal transport and Gromov-Wasserstein methods can be used to predict the three-dimensional structure of proteins.
+    note: David Darrow awarded 2022 Churchill Scholarship
+    note_url: "https://news.mit.edu/2022/three-with-mit-ties-win-churchill-scholarships-0112"
+  - id: uw-community-service
+    program: Community Service
+    institution: University of Washington
+    entries:
+      - title: Math tutoring from K12 to college-level subjects
+        dates: 2015 - 2019
+      - title: Teaching assistant at University of Washington Math Circle
+        dates: 2015 - 2016
+
+service:
+  - id: cmx-seminar
+    title: Organizer of Caltech CMS Departmental CMX Seminar
+    dates: 2025 - 2026
+  - id: one-world-ml
+    title: Board Member of One World Seminar on Mathematics of Machine Learning
+    dates: "2025"
+    url: "https://sites.google.com/view/oneworldml"
+  - id: surf-wave-organizer
+    title: Organizer of SURF/WAVE undergraduate research across three faculty at Caltech CMS
+    dates: "2025"
+  - id: ai-literacy
+    title: Presenter on AI literacy and societal impact in LA and NY Armenian communities
+    dates: "2025"
+  - id: armenian-grad-panel
+    title: Organized panel on graduate school experience and research in Redmond Armenian community
+    dates: "2020"
+  - id: asauw
+    title: Founded and led Armenian Student Association at the University of Washington (ASAUW)
+    dates: 2015 - 2019
+  - id: uw-math-olympiad
+    title: Competition judge at the University of Washington Math Olympiad
+    dates: 2015 - 2019
+
+memberships:
+  - id: ims
+    name: Institute of Mathematical Statistics (IMS)
+    dates: 2024 - Present
+  - id: siam
+    name: Society for Industrial and Applied Mathematics (SIAM)
+    dates: 2020 - Present
+  - id: aps
+    name: American Physical Society (APS)
+    dates: 2019 - Present
+
+internships:
+  - id: ucla-reu-2018
+    dates: Jul 2018 - Aug 2018
+    organization: UCLA
+    role: Computational and Applied Math Research Experience for Undergrads (REU)
+    subtitle: Undergraduate Researcher in Mycofluidics Lab
+    description: Worked in Professor Marcus Roper's lab on imaging of fungal cells in Neurospora and Ashbya fungal species. Collected data on nuclear division of these multinucleated cells using 3D imaging algorithms and performed data analysis on nuclear spacing and mixing within the cell. Discovered that genetically incompatible fungal strains fuse together when exposed to environmental stress. We are working on a paper that relies on the research findings and imaging algorithms I developed at UCLA.
+  - id: ai2-2017
+    dates: Jun 2017 - Sep 2017
+    organization: Allen Institute for Artificial Intelligence (AI2)
+    role: Engineering Intern
+    subtitle: Full Stack Development and Data Analysis/Visualization
+    description: Collaborated with researchers and built a system which optimized hyperparameter selection in various neural network experiments run in the company. I was responsible for experiment design decisions and execution of these experiments on a Google cluster. My platform significantly simplified the experimentation process and reduced runtime by a factor of two.
+  - id: abbyy-2016
+    dates: Aug 2016 - Dec 2016
+    organization: ABBYY
+    role: Natural Language Processing Intern
+    subtitle: Parser Accuracy Scoring
+    description: Compared ABBYY's parser efficiency and output to that of MaltParser. Created scripts in Java to read parser output from CoNLL-X data files and scored them using unlabeled and labeled attachment scores (UAS and LAS). Used Excel for visualization and graphing.
+  - id: pfizer-2016
+    dates: Jun 2016 - Aug 2016
+    organization: Pfizer
+    role: Image Analysis Intern
+    subtitle: Imaging Algorithms for Automated Brain Slice Imaging
+    description: Worked in the Neuroscience Pain Research Unit at Pfizer. Studied how various drugs help regenerate healthy cells damaged by neurodegenerative diseases, especially Parkinson's. Used image analysis algorithms, particularly 3D Watershed Segmentation, to quantify the percentage of regenerated healthy cells after treatment. My automated imaging pipeline was used by researchers to quantify hundreds of drug profiles and reduced the runtime of their image analysis code by 10 times.
+
+news:
+  - id: cambridge-nyu-2026
+    title: Joining Cambridge as Assistant Professor; visiting NYU Courant in 2026-2027
+    date: Oct 2026
+    related: [cambridge-assistant-professor, nyu-visiting-faculty]
+  - id: simons-news-2026
+    title: Isaac Newton Institute 2026 Simons Fellow
+    date: Aug 2026
+    related: [simons-fellow-2026]
+  - id: ilas-news-2026
+    title: ILAS 2026 Early Career NSF Conference Grant Award Recipient
+    date: Apr 2026
+    related: [ilas-grant-2026]
+  - id: birs-news-2025
+    title: Invited Speaker at Banff BIRS Workshop (Efficient and Reliable Deep Learning)
+    date: Jun 2025
+    related: [birs-volterra-2025]
+  - id: msprf-news-2024
+    title: NSF Mathematical Sciences Postdoctoral Research Fellow (MSPRF)
+    date: Sep 2024
+    related: [nsf-msprf]
+  - id: brown-news-2024
+    title: IMS Lawrence D. Brown Ph.D. Student Award Recipient (3 recipients nationwide)
+    date: Sep 2024
+    related: [ims-brown-award]
+  - id: fields-news-2024
+    title: Invited Speaker at Fields Institute Symposium (Machine Learning and Dynamical Systems)
+    date: Jul 2024
+    related: [fields-hidden-dynamics-2024]
+  - id: gulbenkian-news-2023
+    title: Presented at Armenian Statistics Summer School under Calouste Gulbenkian Travel Grant
+    date: Jun 2023
+    related: [gulbenkian-grant-2023, armenia-gw-2023]
+  - id: cirm-news-2021
+    title: Invited Speaker at CIRM (Meeting on Mathematical Statistics)
+    date: Dec 2021
+    related: [cirm-pde-2021]
+  - id: grfp-news-2019
+    title: NSF Graduate Research Fellow (GRFP)
+    date: Sep 2019
+    related: [nsf-grfp]
+  - id: presidential-news-2019
+    title: MIT Presidential Fellow
+    date: Sep 2019
+    related: [mit-presidential-fellowship]
+  - id: pbk-news-2019
+    title: Elected to Phi Beta Kappa Honors Society
+    date: Jun 2019
+    related: [phi-beta-kappa]
