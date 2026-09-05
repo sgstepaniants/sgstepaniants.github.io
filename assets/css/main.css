@@ -1381,10 +1381,6 @@ body.theme-indigo {
   line-height: 2.25rem;
 }
 
-.text-\[1\.1rem\]{
-  font-size: 1.1rem;
-}
-
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1549,26 +1545,46 @@ body.theme-indigo {
   display: block;
 }
 
-/* News panels follow the selected accent and light/dark theme. */
+/* Soft, evenly framed news panels in the selected light/dark theme. */
 
 .news-panel {
-  padding: clamp(1rem, 3vw, 1.5rem);
+  padding: clamp(1.125rem, 3vw, 1.75rem);
   border: 1px solid var(--body-color);
-  border-color: color-mix(in srgb, var(--primary-color) 25%, var(--theme-color));
-  -webkit-border-start: 4px solid var(--primary-color);
-          border-inline-start: 4px solid var(--primary-color);
-  border-radius: 0.75rem;
+  border-color: color-mix(in srgb, var(--paragraph-color) 14%, var(--theme-color));
+  border-radius: 1rem;
   background: var(--body-color);
-  background: color-mix(in srgb, var(--primary-color) 7%, var(--theme-color));
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--primary-color) 5%, var(--theme-color)),
+    color-mix(in srgb, var(--primary-color) 1%, var(--theme-color))
+  );
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.025), 0 10px 24px rgb(0 0 0 / 0.025);
 }
 
 .news-panel-label {
-  margin-bottom: 0.625rem;
-  font-size: 0.75rem;
+  display: inline-flex;
+  margin-bottom: 0.875rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: var(--theme-color);
+  background: color-mix(in srgb, var(--primary-color) 9%, var(--theme-color));
+  font-size: 0.6875rem;
   font-weight: 600;
   line-height: 1rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.news-panel-copy {
+  color: var(--heading-color);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.news-panel-copy a {
+  font-weight: 500;
+  text-underline-offset: 0.15em;
 }
 
 .news-panel-label,

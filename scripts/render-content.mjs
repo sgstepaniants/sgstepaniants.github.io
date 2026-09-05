@@ -384,7 +384,7 @@ function renderAbout(data) {
     '              <h2 class="mb-3 text-2xl font-semibold text-heading">About Me</h2>',
     '              <aside class="news-panel mb-6" aria-labelledby="announcement-heading">',
     '                <h3 id="announcement-heading" class="news-panel-label">News</h3>',
-    '                <p class="text-[1.1rem] font-semibold leading-relaxed text-heading">' + markdownLinks(data.profile.announcement) + "</p>",
+    '                <p class="news-panel-copy">' + markdownLinks(data.profile.announcement) + "</p>",
     "              </aside>",
     '              <div class="text-justify text-sm leading-relaxed">',
     data.profile.biography.map((paragraph) => '                <p class="mb-4">' + markdownLinks(paragraph) + "</p>").join("\n"),
