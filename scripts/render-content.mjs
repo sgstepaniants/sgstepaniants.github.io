@@ -422,7 +422,6 @@ function renderAbout(data) {
 
   return [
     '            <div class="mb-10">',
-    '              <h2 class="mb-3 text-2xl font-semibold text-heading">About Me</h2>',
     '              <aside class="news-panel news-panel--recruiting mb-6" aria-labelledby="recruitment-heading">',
     '                <h3 id="recruitment-heading" class="news-panel-label">News</h3>',
     '                <p class="news-panel-copy"><strong>' + escapeHtml(recruitment.lead) + '</strong> ' + escapeHtml(recruitment.text) + "</p>",
