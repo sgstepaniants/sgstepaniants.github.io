@@ -10,6 +10,12 @@ Review `content/academic-profile.yaml` for evidence-backed updates since its
    George Stepaniants. Treat Google Scholar as a cross-check, not the sole source.
 3. Look for new publications or preprints, publication-status changes, talks,
    awards, positions, courses, mentoring, and other homepage-news candidates.
+   Website work and GitHub or other repository contributions are not talks or
+   seminars. Never classify them as speaking events. They may be proposed for
+   News, but ask me for explicit approval of the specific entry before adding
+   it; a general request to review or update the website is not approval.
+   Talk and seminar candidates need evidence identifying me as a speaker at
+   a named event on a stated date, not just website or repository activity.
 4. Report candidate changes first. For each candidate, give the proposed YAML
    section, supporting URL, event/publication date, and any uncertainty.
 5. Do not edit files until I approve the candidates. Never infer an acceptance,

@@ -192,6 +192,120 @@
   color: color-mix(in srgb, var(--paragraph-color) 85%, var(--heading-color));
 }
 
+.news-panel--recruiting {
+  --primary-color: #ea580c;
+}
+
+.news-panel-links {
+  margin-top: 0.75rem;
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+
+.news-panel-links li + li {
+  margin-top: 0.25rem;
+}
+
+/* Each project link shares a row with the research goal it supports. */
+.research-goals {
+  margin-bottom: 1.5rem;
+}
+
+.research-goal {
+  display: grid;
+  align-items: center;
+  gap: 1rem 1.75rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--body-color);
+  border-color: color-mix(in srgb, var(--paragraph-color) 18%, var(--theme-color));
+}
+
+.research-goal:first-child {
+  padding-top: 0;
+}
+
+.research-goal-copy {
+  display: flex;
+  gap: 0.75rem;
+  min-width: 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.research-goal-copy strong,
+.research-goal-number {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.research-goal-number {
+  flex: 0 0 2rem;
+}
+
+.research-goal-link {
+  display: grid;
+  grid-template-columns: 5.5rem minmax(0, 1fr);
+  align-items: center;
+  gap: 0.875rem;
+  width: 100%;
+  padding: 0.875rem;
+  border: 1px solid var(--body-color);
+  border-color: color-mix(in srgb, var(--paragraph-color) 18%, var(--theme-color));
+  border-radius: 0.75rem;
+  background: var(--theme-color);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.research-goal-link:hover {
+  border-color: var(--primary-color);
+  background: color-mix(in srgb, var(--primary-color) 4%, var(--theme-color));
+}
+
+.research-goal-link:focus-visible {
+  outline: 3px solid var(--ring-color);
+  outline-offset: 3px;
+}
+
+.research-goal-link img {
+  width: 5.5rem;
+  height: 4rem;
+  padding: 0.25rem;
+  border-radius: 0.375rem;
+  background: #fff;
+  object-fit: contain;
+}
+
+.research-goal-link-copy {
+  display: grid;
+  gap: 0.25rem;
+  min-width: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.research-goal-link-title {
+  color: var(--heading-color);
+  font-weight: 500;
+}
+
+.research-goal-link-action {
+  color: var(--primary-color);
+  color: color-mix(in srgb, var(--primary-color) 75%, var(--heading-color));
+  text-underline-offset: 0.2em;
+}
+
+.research-goal-link:hover .research-goal-link-action {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .research-goal {
+    grid-template-columns: minmax(0, 1fr) 17rem;
+  }
+}
+
 /* Two-column, equal-height cards with individually framed paper figures. */
 #wrapper-portfolio {
   display: grid;

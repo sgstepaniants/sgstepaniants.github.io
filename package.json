@@ -9,7 +9,7 @@
     "content:check": "node scripts/render-content.mjs --check",
     "resume:build": "mkdir -p resume/.build && latexmk -cd -xelatex -interaction=nonstopmode -halt-on-error -outdir=.build resume/George_Stepaniants_CV.tex && cp resume/.build/George_Stepaniants_CV.pdf resume/George_Stepaniants_CV.pdf",
     "clean": "latexmk -C -cd -outdir=.build resume/George_Stepaniants_CV.tex && rm -rf resume/.build",
-    "check": "npm run content:check && node --check assets/js/data.js && node --check assets/js/main.js",
+    "check": "npm run content:check && node --check assets/js/data.js && node --check assets/js/main.js && node --check assets/js/contact-form.js",
     "dev": "npx tailwindcss -i ./src/styles.css -o ./assets/css/main.css --watch",
     "minify": "npx tailwindcss -i ./src/styles.css -o ./assets/css/main.min.css --minify"
   },

@@ -46,7 +46,22 @@ function validate(data) {
   requireValue(data.meta?.last_reviewed, "meta.last_reviewed");
   requireValue(data.profile?.name, "profile.name");
   asArray(data.profile?.emails, "profile.emails");
+  requireValue(data.profile.emails[0], "profile.emails[0]");
+  for (const [index, location] of asArray(data.profile?.locations, "profile.locations").entries()) {
+    const label = "profile.locations[" + index + "]";
+    requireValue(location.label, label + ".label");
+    requireValue(location.url, label + ".url");
+    validateUrl(location.url, label + ".url");
+  }
   asArray(data.profile?.research_areas, "profile.research_areas");
+  requireValue(data.profile?.recruitment_announcement?.lead, "profile.recruitment_announcement.lead");
+  requireValue(data.profile?.recruitment_announcement?.text, "profile.recruitment_announcement.text");
+  for (const [index, link] of asArray(data.profile.recruitment_announcement.links, "profile.recruitment_announcement.links").entries()) {
+    const label = "profile.recruitment_announcement.links[" + index + "]";
+    requireValue(link.label, label + ".label");
+    requireValue(link.url, label + ".url");
+    validateUrl(link.url, label + ".url");
+  }
 
   const collections = [
     "employment",
@@ -82,7 +97,7 @@ function validate(data) {
       asArray(publication.groups, "publications[" + index + "].groups");
       asArray(publication.keywords, "publications[" + index + "].keywords");
       for (const group of publication.groups) {
-        if (!["de", "ot", "nn", "other"].includes(group)) {
+        if (!["de", "ot", "ip", "other"].includes(group)) {
           fail("Unknown research group '" + group + "' on " + publication.id);
         }
       }
@@ -319,6 +334,12 @@ function renderProfileHeading(data, mobile) {
   return [
     '          <h2 class="' + headingClass + '">' + escapeHtml(data.profile.name) + "</h2>",
     "          <p>" + data.profile.headline.map(escapeHtml).join("<br/>") + "</p>",
+    ...(mobile ? [
+      '          <div class="mt-4 flex flex-col items-center gap-3">',
+      renderProfileEmails(data),
+      renderProfileLocations(data),
+      "          </div>",
+    ] : []),
   ].join("\n");
 }
 
@@ -339,8 +360,26 @@ function renderProfileEmails(data) {
   ].join("\n")).join("\n");
 }
 
+function renderProfileLocations(data) {
+  return data.profile.locations.map((location) => [
+    '            <span class="flex items-center">',
+    '              <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">',
+    '                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />',
+    '                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />',
+    "              </svg>",
+    '              <a href="' + escapeAttr(location.url) + '" class="hover:text-heading hover:underline">' + escapeHtml(location.label) + "</a>",
+    "            </span>",
+  ].join("\n")).join("\n");
+}
+
+function renderContactEmail(data) {
+  const email = data.profile.emails[0];
+  return '<p class="text-sm">Email me at <a id="contact-email" href="mailto:' + escapeAttr(email) + '" class="text-primary underline">' + escapeHtml(email) + '</a> or use the form below.</p>';
+}
+
 function renderAbout(data) {
   const mission = data.profile.research_mission;
+  const recruitment = data.profile.recruitment_announcement;
   const educationCards = [...data.education].reverse().map((entry) => [
     '                <div class="group my-5 sm:mx-5 sm:my-0" style="width:33%">',
     '                  <span class="flex h-10 w-10 items-center justify-center rounded-md bg-primary transition-all duration-700 group-hover:rotate-[360deg]">',
@@ -363,25 +402,36 @@ function renderAbout(data) {
     "                </div>",
   ].join("\n"));
 
-  const themes = [
-    ["Scientific Modeling", "assets/images/portfolios/netinf.png"],
-    ["Optimal Transport", "assets/images/portfolio-details/splines.png"],
-    ["Deep Learning", "assets/images/portfolios/gulp.png"],
-  ].map(([label, image]) => [
-    '                <div class="site-to-portfolio group flex cursor-pointer items-center justify-between">',
-    '                  <div class="relative flex w-full items-center">',
-    '                    <img class="h-[72px] w-[112px] rounded-md object-cover" src="' + image + '" alt="' + escapeAttr(label) + '" width="112" height="72" />',
-    '                    <div class="ml-6 flex flex-col gap-1 whitespace-nowrap max-[320px]:ml-2">',
-    '                      <h4 class="text-sm font-medium text-heading">' + escapeHtml(label) + "</h4>",
-    '                      <p class="text-sm">See projects</p>',
-    "                    </div>",
-    "                  </div>",
-    "                </div>",
-  ].join("\n")).join("\n");
+  const goalProjects = {
+    I: { label: "Scientific Modeling", group: "de", image: "netinf.png" },
+    II: { label: "Optimal Transport", group: "ot", image: "splines.png" },
+    III: { label: "Inverse Problems", group: "ip", image: "spectral_volterra.png" },
+  };
+  const goals = mission.thrusts.map((thrust) => {
+    const project = goalProjects[thrust.label];
+    return [
+      '                <li class="research-goal">',
+      '                  <p class="research-goal-copy"><span class="research-goal-number">(' + escapeHtml(thrust.label) + ')</span><span><strong>' + escapeHtml(thrust.lead) + '</strong> ' + escapeHtml(thrust.detail) + '</span></p>',
+      '                  <button type="button" class="site-to-portfolio research-goal-link" data-research-group="' + project.group + '" aria-label="See ' + escapeAttr(project.label.toLowerCase()) + ' projects for research goal ' + escapeAttr(thrust.label) + '">',
+      '                    <img src="assets/images/portfolios/' + project.image + '" alt="" width="88" height="64" loading="lazy" />',
+      '                    <span class="research-goal-link-copy"><span class="research-goal-link-title">' + escapeHtml(project.label) + '</span><span class="research-goal-link-action">See projects</span></span>',
+      '                  </button>',
+      '                </li>',
+    ].join("\n");
+  }).join("\n");
 
   return [
     '            <div class="mb-10">',
     '              <h2 class="mb-3 text-2xl font-semibold text-heading">About Me</h2>',
+    '              <aside class="news-panel news-panel--recruiting mb-6" aria-labelledby="recruitment-heading">',
+    '                <h3 id="recruitment-heading" class="news-panel-label">News</h3>',
+    '                <p class="news-panel-copy"><strong>' + escapeHtml(recruitment.lead) + '</strong> ' + escapeHtml(recruitment.text) + "</p>",
+    '                <ul class="news-panel-copy news-panel-links">',
+    recruitment.links.map((link) =>
+      '                  <li><a class="hover:underline" href="' + escapeAttr(link.url) + '">' + escapeHtml(link.label) + "</a></li>"
+    ).join("\n"),
+    "                </ul>",
+    "              </aside>",
     '              <aside class="news-panel mb-6" aria-labelledby="announcement-heading">',
     '                <h3 id="announcement-heading" class="news-panel-label">News</h3>',
     '                <p class="news-panel-copy">' + markdownLinks(data.profile.announcement) + "</p>",
@@ -392,21 +442,14 @@ function renderAbout(data) {
     "              </div>",
     "            </div>",
     "",
-    '            <div class="mb-14 flex flex-col justify-between sm:mb-16 md:flex-row">',
-    '              <div class="w-full md:shrink-0 md:w-[380px]">',
-    '                <h2 class="mb-3 text-2xl font-semibold text-heading">Research Mission</h2>',
-    '                <p class="mb-5 text-sm leading-relaxed"><i>' + escapeHtml(mission.question) + "</i></p>",
-    '                <ol class="mb-5 text-sm leading-relaxed">',
-    mission.thrusts.map((thrust) =>
-      "                  <li><b>(" + escapeHtml(thrust.label) + ") " + escapeHtml(thrust.lead) + "</b> " + escapeHtml(thrust.detail) + "</li>"
-    ).join("\n"),
-    "                </ol>",
-    '                <p class="mb-5 text-sm leading-relaxed">' + escapeHtml(mission.closing) + "</p>",
-    "              </div>",
-    '              <div class="mx-2 mt-10 flex w-full flex-col gap-5 pr-4 md:mt-0 md:w-2/5 md:pr-0">',
-    themes,
-    "              </div>",
-    "            </div>",
+    '            <section class="mb-14 sm:mb-16" aria-labelledby="research-mission-heading">',
+    '              <h2 id="research-mission-heading" class="mb-3 text-2xl font-semibold text-heading">Research Mission</h2>',
+    '              <p class="mb-5 text-base leading-relaxed"><i>' + escapeHtml(mission.question) + "</i></p>",
+    '              <ol class="research-goals" role="list">',
+    goals,
+    "              </ol>",
+    '              <p class="text-base leading-relaxed">' + escapeHtml(mission.closing) + "</p>",
+    "            </section>",
     "",
     '            <div class="mb-11 md:mb-16">',
     '              <h2 class="text-2xl font-semibold text-heading">Education</h2>',
@@ -703,19 +746,6 @@ function renderTalksWeb(data) {
   ].join("\n");
 }
 
-function renderInternshipsWeb(data) {
-  return [
-    '            <div class="mb-10">',
-    '              <h2 class="mb-6 text-2xl font-semibold text-heading">Internship and Research Experience</h2>',
-    data.internships.map((item) => timelineItem(
-      item.dates,
-      escapeHtml(item.role + " at " + item.organization),
-      ["<em>" + escapeHtml(item.subtitle) + "</em>", escapeHtml(item.description)]
-    )).join("\n"),
-    "            </div>",
-  ].join("\n");
-}
-
 function renderWebCv(data) {
   return [
     renderEmploymentWeb(data),
@@ -723,7 +753,6 @@ function renderWebCv(data) {
     renderAwardsWeb(data),
     renderPublicationsWeb(data),
     renderTalksWeb(data),
-    renderInternshipsWeb(data),
   ].join("\n");
 }
 
@@ -892,29 +921,15 @@ function renderTexMemberships(data) {
   ].join("\n");
 }
 
-function renderTexInternships(data) {
-  const rows = data.internships.map((item, index) => {
-    const spacer = index < data.internships.length - 1 ? "\n\\multicolumn{2}{c}{}\\\\" : "";
-    return [
-      latexDate(item.dates) + " & " + latex(item.role) + " at \\textbf{" + latex(item.organization) + "}\\\\",
-      "& \\emph{" + latex(item.subtitle) + "}\\\\",
-      "& \\footnotesize{" + latex(item.description) + "}\\\\" + spacer,
-    ].join("\n");
-  }).join("\n");
-  return "\\section{Internship and Research Experience}\n\\begin{tabular}{r|p{13cm}}\n" + rows + "\n\\end{tabular}";
-}
-
 function renderTex(data) {
-  const emails = data.profile.emails.map((email) => texLink("mailto:" + email, email));
+  const email = data.profile.emails[0];
   const header = [
     "\\par{\\centerline{",
     "  {\\Huge " + latex(data.profile.name) + "}}\\bigskip",
-    "  \\centerline{" + emails.join(" \\,|\\, ") + " \\,|\\, " + texLink(data.profile.website, data.profile.website) + "}",
+    "  \\centerline{" + texLink("mailto:" + email, email) + " \\,|\\, " + texLink(data.profile.website, data.profile.website) + "}",
     "}\\bigskip",
     "",
     latex(data.profile.summary),
-    "",
-    "\\underline{\\smash{Research Areas:}} " + data.profile.research_areas.map(latex).join(", "),
   ].join("\n");
   return [
     header,
@@ -927,7 +942,6 @@ function renderTex(data) {
     renderTexMentoring(data),
     renderTexService(data),
     renderTexMemberships(data),
-    renderTexInternships(data),
   ].join("\n\n");
 }
 
@@ -950,7 +964,9 @@ let index = fs.readFileSync(INDEX_PATH, "utf8");
 index = replaceHtmlBlock(index, "PROFILE_METADATA", renderMetadata(data));
 index = replaceHtmlBlock(index, "PROFILE_SIDEBAR", renderProfileHeading(data, false));
 index = replaceHtmlBlock(index, "PROFILE_EMAILS", renderProfileEmails(data));
+index = replaceHtmlBlock(index, "PROFILE_LOCATIONS", renderProfileLocations(data));
 index = replaceHtmlBlock(index, "PROFILE_MOBILE", renderProfileHeading(data, true));
+index = replaceHtmlBlock(index, "CONTACT_EMAIL", renderContactEmail(data));
 index = replaceHtmlBlock(index, "ABOUT", renderAbout(data));
 index = replaceHtmlBlock(index, "RESEARCH", renderResearch(data));
 index = replaceHtmlBlock(index, "TEACHING", renderTeaching(data));

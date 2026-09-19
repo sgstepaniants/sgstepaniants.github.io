@@ -1,6 +1,6 @@
 meta:
   schema_version: 1
-  last_reviewed: "2026-09-04"
+  last_reviewed: "2026-09-19"
   update_sources:
     - name: ORCID
       url: "https://orcid.org/0000-0002-7834-7536"
@@ -16,12 +16,27 @@ meta:
 profile:
   name: George Stepaniants
   emails:
-    - gstepan@caltech.edu
+    - gs852@cam.ac.uk
     - georgestepaniants@gmail.com
+  locations:
+    - label: New York, NY
+      url: "https://www.google.com/maps/search/?api=1&query=New+York%2C+NY"
+    - label: Cambridge, UK
+      url: "https://www.google.com/maps/search/?api=1&query=Cambridge%2C+UK"
   website: "https://georgestepaniants.com"
   headline:
-    - NSF Postdoctoral Fellow, Caltech
     - Incoming Assistant Professor, Cambridge
+  recruitment_announcement:
+    lead: I am recruiting PhD students and postdocs to join my team at Cambridge DAMTP starting in Fall 2027.
+    text: >-
+      My group will develop methods at the forefront of scientific machine learning, computer-assisted mathematics, data-driven dynamics, and optimal transport, with a goal to accelerate model inference and prediction in complex physical systems. Students and researchers with a strong background in mathematics and computation who are interested in learning more about my group are very welcome to reach out. Useful links for those interested in PhD studies or postdoctoral work at Cambridge DAMTP can be found below:
+    links:
+      - label: DAMTP PhD Program
+        url: "https://www.postgraduate.study.cam.ac.uk/courses/directory/maampdmtp"
+      - label: Cambridge Postdoc Fellowship Programs
+        url: "https://www.newtontrust.cam.ac.uk/ECFs"
+      - label: External Postdoc Fellowship Programs
+        url: "https://www.damtp.cam.ac.uk/externally-funded-opportunities"
   announcement: >-
     Starting in October 2026, I will join the faculty at the University of Cambridge as an Assistant Professor in Mathematics of Information in the [Department of Applied Mathematics and Theoretical Physics (DAMTP)](https://www.damtp.cam.ac.uk/). I will spend the 2026-2027 academic year as visiting faculty at [New York University's Courant Institute](https://math.nyu.edu/).
   biography:
@@ -32,7 +47,7 @@ profile:
     - >-
       Prior to MIT, I graduated in 2019 from the University of Washington with a Bachelor of Science in Mathematics and Computer Science, where I performed research in the [Department of Applied Mathematics](https://amath.washington.edu/) with [Prof. Nathan Kutz](http://faculty.washington.edu/kutz/).
   summary: >-
-    I develop data-driven methods to learn laws and relationships in scientific data, using foundations of machine learning, statistical theory, numerical analysis, and mathematical modeling to design approaches that succeed in data-limited regimes and embody domain-specific inductive biases. My teaching philosophy is inspired by my research, showing students how to discover mathematical ideas in field-specific literature, translate them into well-posed theories, and bring these theories to life as numerical algorithms and reproducible code.
+    I have broad interests in scientific machine learning, computer-assisted mathematics, dynamical systems, and optimal transport. My research develops methods for efficient and accurate model inference and prediction in complex physical systems, backed by rigorous analysis, approximation bounds, and statistical guarantees.
   research_areas:
     - Applied and Computational Mathematics
     - Statistical Theory and Methods
@@ -45,17 +60,17 @@ profile:
     - Fluid Dynamics
     - Biophysics
   research_mission:
-    question: How do we develop physically faithful models when data are collected from disparate sources, sample-limited and noisy, or partial observations of a larger system?
+    question: How do we develop physically faithful models and solve inverse problems when data are collected from disparate sources, sample-limited and noisy, or only available as partial observations of a larger system?
     thrusts:
       - label: I
+        lead: Advancement of statistical and machine learning methods to learn governing physical laws from data
+        detail: in noisy and data-sparse regimes, with analytical, approximation theoretic, and statistical guarantees
+      - label: II
         lead: Development of optimal transport techniques for alignment and pooling of scientific data
         detail: from disparate sources, with rigorous finite-sample guarantees
-      - label: II
-        lead: Advancement of inference methods to learn governing physical laws from data
-        detail: in noisy and data-sparse regimes, with theoretical approximation bounds and statistical rates
       - label: III
-        lead: Design of memory-dependent (autoregressive) and higher-order models
-        detail: as a way of compensating for incomplete observability in time-dependent systems
+        lead: Advancing mathematical theory and numerical algorithms for inverse problems
+        detail: with applications to spatial and temporal deconvolution and to systems with nonlocal and long-range interactions
     closing: The methodological and theoretical developments in these three thrusts are guided by my work in specific application domains including biochemistry, materials science, and fluid mechanics.
   teaching_philosophy:
     intro: My goal as an educator is to teach students how to work on the interface of different disciplines and leverage tools from mathematical theory in physics, life sciences, probability theory, and statistics to solve their problems. My teaching philosophy is to train students to
@@ -78,7 +93,7 @@ employment:
     role: Visiting Faculty
     department: Courant Institute School of Mathematics, Computing, and Data Science
   - id: caltech-postdoc
-    dates: "Sep 2024 - Present"
+    dates: "Sep 2024 - 2026"
     institution: California Institute of Technology
     role: Postdoctoral Scholar
     title: NSF Mathematical Sciences Postdoctoral Research Fellow (MSPRF)
@@ -131,7 +146,7 @@ awards:
   - id: nsf-msprf
     name: NSF Mathematical Sciences Postdoctoral Research Fellowship
     short_name: NSF Mathematical Sciences Postdoctoral Research Fellowship (MSPRF)
-    dates: Sep 2024 - Current
+    dates: Sep 2024 - 2026
     award_number: "2402074"
     url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2402074&HistoricalAwards=false"
   - id: ims-brown-award
@@ -181,11 +196,11 @@ publications:
     category: preprint
     title: A Complete Resolution of Forsythe's Conjecture for Restarted Conjugate Gradients
     authors: [Matthew J. Colbrook, George Stepaniants, Alex Townsend]
-    venue: Zenodo preprint
-    citation_detail: "(2026). DOI: 10.5281/zenodo.22289731."
-    card_venue: Zenodo preprint
+    venue: "arXiv preprint arXiv:2609.04659"
+    citation_detail: "(2026)."
+    card_venue: arXiv preprint
     year: 2026
-    url: "https://doi.org/10.5281/zenodo.22289731"
+    url: "https://arxiv.org/abs/2609.04659"
     published_date: September 4, 2026
     # Figure 1, Zenodo record 22289731, page 4. Captured from the PDF at 240 dpi.
     image: forsythe_complete_resolution.png
@@ -199,7 +214,7 @@ publications:
     research_card: true
     abstract_label: Summary
     abstract: >-
-      We give a complete classification of Forsythe's conjecture by restart length for exact-arithmetic restarted conjugate gradients on finite-dimensional symmetric positive definite problems. For restart lengths two and three, every iteration either terminates or has even and odd normalized residual directions that converge separately. Combined with the classical result for restart length one, this establishes the conjecture precisely for restart lengths one, two, and three. For every restart length s of four or more, we construct a diagonal positive definite counterexample of dimension s + 4 whose even residual directions do not converge. The proof combines a double-orthogonality identity and low-degree fixed-set analysis with a computer-certified Hopf bifurcation, analytic periodic-orbit and shadowing arguments, and degree elevation.
+      We give a complete classification of Forsythe's conjecture by restart length for exact-arithmetic restarted conjugate gradients on finite-dimensional symmetric positive definite problems. For restart lengths two and three, every iteration either terminates or has even and odd normalized residual directions that converge separately. Combined with the classical result for restart length one, this establishes the conjecture precisely for restart lengths one, two, and three. For every restart length s of four or more, we construct a diagonal positive definite counterexample of dimension s + 4 whose even residual directions do not converge. The proof combines a double-orthogonality identity and low-degree fixed-set analysis with a computer-certified Hopf bifurcation, analytic periodic-orbit and shadowing arguments, and degree elevation. A Lean formalization also verifies the classification for all restart lengths of two or more.
     keywords: [conjugate gradient method, restarted Krylov method, Forsythe conjecture, orthogonal polynomials, Hopf bifurcation, computer-assisted proof]
   - id: berenstein-counterexample
     category: preprint
@@ -218,7 +233,7 @@ publications:
       padding: 8
     image_alt: Sign-changing eigenfunction on a noncircular domain with thirteen-fold rotational symmetry, with nodal curves and a color scale
     image_caption: "Figure 1. Numerical approximation to the sign-changing eigenfunction on the Berenstein counterexample domain."
-    groups: [de]
+    groups: [ip]
     research_card: true
     abstract_label: Summary
     abstract: >-
@@ -265,7 +280,7 @@ publications:
       padding: 14
     image_alt: Ten-lobed, noncircular shortcake-shaped domain forming a counterexample to the planar Pompeiu and Schiffer conjectures
     image_caption: "Figure 1. Boundary of the finite conformal approximation to the ten-lobed counterexample domain."
-    groups: [de]
+    groups: [ip]
     research_card: true
     abstract_label: Summary
     abstract: >-
@@ -287,7 +302,7 @@ publications:
       crop: [360, 22, 664, 456]
       padding: 8
       alt: Stress-response heatmaps comparing a model without memory with the learned memory-dependent response
-    groups: [de, nn]
+    groups: [de, other]
     research_card: true
     abstract: >-
       We propose and study a neural operator framework for learning memory- and material microstructure-dependent constitutive laws for heterogeneous materials. We work in the two-scale setting where homogenization theory provides a systematic approach to deriving macroscale constitutive laws, obviating the need to resolve complex microstructure repeatedly. However, the unit cell problems defining these constitutive models are typically not amenable to explicit evaluation. It is therefore of interest to learn constitutive models from data generated by the unit cell problem. Our proposed framework models homogenized constitutive laws with both memory- and microstructure-dependence through the use of Markovian recurrent and Fourier neural operators. The homogenization problem for Kelvin-Voigt viscoelastic materials is studied to provide firm theoretical foundations for our model. The theoretical properties of the cell problem in this Kelvin-Voigt setting motivate the proposed learning framework; and are also used to prove a universal approximation theorem for the learned macroscale constitutive model. Numerical experiments show that the proposed learning framework accurately learns memory- and microstructure-dependent viscoelastic and elasto-viscoplastic constitutive models, beyond the setting of the theory. Furthermore, we show that the learned constitutive models can be successfully deployed in macroscale simulation of material deformation for different microstructures without retraining.
@@ -308,7 +323,7 @@ publications:
       crop: [320, 30, 835, 610]
       padding: 8
       alt: Three spectral distributions and their computed and analytic Hilbert transforms
-    groups: [de]
+    groups: [de, ip]
     research_card: true
     abstract: >-
       This work aims to bridge the gap between pure and applied research on scalar, linear Volterra equations by examining five major classes: integral and integro-differential equations with completely monotone kernels (viscoelastic models); equations with positive definite kernels (partially observed quantum systems); difference equations with discrete, positive definite kernels; a generalized class of delay differential equations; and a generalized class of fractional differential equations. We develop a general, spectral theory that provides a system of correspondences between these disparate domains. As a result, we see how 'interconversion' (operator inversion) arises as a natural, continuous involution within each class, yielding a plethora of novel formulas for analytical solutions of such equations. This spectral theory unifies and extends existing results in viscoelasticity, signal processing, and analysis. It also introduces a geometric construction of the regularized Hilbert transform, revealing a fundamental connection to fractional and delay differential equations. Finally, it offers a practical toolbox for Volterra equations of all classes, reducing many to pen-and-paper calculations and introducing a powerful spectral approach for general Volterra equations based on rational approximation.
@@ -350,7 +365,7 @@ publications:
       crop: [14, 8, 686, 496]
       padding: 8
       alt: Reconstructed time series, discovered coefficients, and a Lorenz attractor
-    groups: [de]
+    groups: [de, ip]
     research_card: true
     abstract: >-
       Despite rapid progress in data acquisition techniques, many complex physical, chemical, and biological systems remain only partially observable, thus posing the challenge to identify valid theoretical models and estimate their parameters from an incomplete set of experimentally accessible time series. Here, we combine sensitivity methods and ranked-choice model selection to construct an automated hidden dynamics inference framework that can discover predictive nonlinear dynamical models for both observable and latent variables from noise-corrupted incomplete data in oscillatory and chaotic systems. After validating the framework for prototypical FitzHugh-Nagumo oscillations, we demonstrate its applicability to experimental data from squid neuron activity measurements and Belousov-Zhabotinsky reactions, as well as to the Lorenz system in the chaotic regime.
@@ -391,7 +406,7 @@ publications:
       crop: [754, 10, 705, 612]
       padding: 8
       alt: Smooth RKHS estimate of the Green's function, with axes and a color scale
-    groups: [de]
+    groups: [de, ip]
     research_card: true
     abstract: >-
       We propose a new data-driven approach for learning the fundamental solutions (Green's functions) of various linear partial differential equations (PDEs) given sample pairs of input-output functions. Building off the theory of functional linear regression (FLR), we estimate the best-fit Green's function and bias term of the fundamental solution in a reproducing kernel Hilbert space (RKHS) which allows us to regularize their smoothness and impose various structural constraints. We derive a general representer theorem for operator RKHSs to approximate the original infinite-dimensional regression problem by a finite-dimensional one, reducing the search space to a parametric class of Green's functions. In order to study the prediction error of our Green's function estimator, we extend prior results on FLR with scalar outputs to the case with functional outputs. Finally, we demonstrate our method on several linear PDEs including the Poisson, Helmholtz, Schrödinger, Fokker-Planck, and heat equation. We highlight its robustness to noise as well as its ability to generalize to new data with varying degrees of smoothness and mesh discretization without any additional training.
@@ -411,7 +426,7 @@ publications:
       crop: [457, 31, 564, 321]
       padding: 8
       alt: GULP representation comparisons at three regularization levels, colored by network width and depth
-    groups: [nn]
+    groups: [other]
     research_card: true
     abstract: >-
       Comparing the representations learned by different neural networks has recently emerged as a key tool to understand various architectures and ultimately optimize them. In this work, we introduce GULP, a family of distance measures between representations that is explicitly motivated by downstream predictive tasks. By construction, GULP provides uniform control over the difference in prediction performance between two representations, with respect to regularized linear prediction tasks. Moreover, it satisfies several desirable structural properties, such as the triangle inequality and invariance under orthogonal transformations, and thus lends itself to data embedding and visualization. We extensively evaluate GULP relative to other methods, and demonstrate that it correctly differentiates between architecture families, converges over the course of training, and captures generalization performance on downstream linear tasks.
@@ -452,7 +467,7 @@ publications:
       crop: [18, 12, 570, 389]
       padding: 8
       alt: Granger-causality accuracy and spectra for three network models
-    groups: [de]
+    groups: [de, ip]
     research_card: true
     abstract: >-
       Inferring causal relations from time series measurements is an ill-posed mathematical problem, where typically an infinite number of potential solutions can reproduce the given data. We explore in depth a strategy to disambiguate between possible underlying causal networks by perturbing the network, where the forcings are either targeted or applied at random. The resulting transient dynamics provide the critical information necessary to infer causality. Two methods are shown to provide accurate causal reconstructions: Granger causality (GC) with perturbations, and our proposed perturbation cascade inference (PCI). Perturbed GC is capable of inferring smaller networks under low coupling strength regimes. Our proposed PCI method demonstrated consistently strong performance in inferring causal relations for small (2-5 node) and large (10-20 node) networks, with both linear and nonlinear dynamics. Thus, the ability to apply a large and diverse set of perturbations to the network is critical for successfully and accurately determining causal relations and disambiguating between various viable networks.
@@ -500,6 +515,21 @@ talks:
     event: SIAM Conference on Mathematics of Data Science
     location: Atlanta
     date: October 2024
+  - id: columbia-shortcake-2026
+    type: invited
+    title: A Shortcake Counterexample to the Planar Pompeiu and Schiffer Conjectures
+    event: Columbia Applied Mathematics Colloquium
+    location: New York
+    date: November 2026
+    note: Upcoming
+    url: "https://www.physics.columbia.edu/events/applied-math-colloquium-george-stepaniants-u-cambridge"
+  - id: princeton-shortcake-2026
+    type: invited
+    title: A Shortcake Counterexample to the Planar Pompeiu and Schiffer Conjectures
+    event: Princeton IDeAS Seminar
+    location: Princeton
+    date: September 2026
+    url: "https://www.pacm.princeton.edu/events/shortcake-counterexample-planar-pompeiu-and-schiffer-conjectures"
   - id: newton-volterra-2026
     type: invited
     title: Volterra Integral Equations and Memory Dependent Constitutive Laws
@@ -512,6 +542,13 @@ talks:
     event: ILAS
     location: Virginia Tech
     date: May 2026
+  - id: ut-austin-limited-data-2026
+    type: invited
+    title: Learning Dynamics with Limited Data
+    event: UT Austin Oden Institute & Department of Statistics and Data Sciences
+    location: Online
+    date: January 2026
+    url: "https://oden.utexas.edu/news-and-events/events/2200---George%20Stepaniants/"
   - id: uci-volterra-2025
     type: invited
     title: Volterra Integral Equations and Memory Dependent Constitutive Laws
@@ -824,6 +861,7 @@ memberships:
     name: American Physical Society (APS)
     dates: 2019 - Present
 
+# Archived history, omitted from the website and CV.
 internships:
   - id: ucla-reu-2018
     dates: Jul 2018 - Aug 2018
