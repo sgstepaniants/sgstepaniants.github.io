@@ -435,6 +435,7 @@ function renderAbout(data) {
     '                <h3 id="announcement-heading" class="news-panel-label">News</h3>',
     '                <p class="news-panel-copy">' + markdownLinks(data.profile.announcement) + "</p>",
     "              </aside>",
+    '              <h2 class="mb-3 text-2xl font-semibold text-heading">About Me</h2>',
     '              <div class="text-justify text-sm leading-relaxed">',
     data.profile.biography.map((paragraph) => '                <p class="mb-4">' + markdownLinks(paragraph) + "</p>").join("\n"),
     '                <p>' + escapeHtml(data.profile.summary) + "</p>",
