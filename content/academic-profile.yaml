@@ -1,6 +1,6 @@
 meta:
   schema_version: 1
-  last_reviewed: "2026-09-19"
+  last_reviewed: "2026-10-05"
   update_sources:
     - name: ORCID
       url: "https://orcid.org/0000-0002-7834-7536"
@@ -25,7 +25,8 @@ profile:
       url: "https://www.google.com/maps/search/?api=1&query=Cambridge%2C+UK"
   website: "https://georgestepaniants.com"
   headline:
-    - Incoming Assistant Professor, Department of Applied Mathematics and Theoretical Physics, University of Cambridge
+    - Assistant Professor, Department of Applied Mathematics and Theoretical Physics, University of Cambridge
+    - Visiting Faculty, Courant Institute, New York University
   recruitment_announcement:
     lead: I am recruiting PhD students and postdocs to join my team at Cambridge DAMTP starting in Fall 2027.
     text: >-
@@ -38,10 +39,12 @@ profile:
       - label: External Postdoc Fellowship Programs
         url: "https://www.damtp.cam.ac.uk/externally-funded-opportunities"
   announcement: >-
-    Starting in October 2026, I will join the faculty at the University of Cambridge as an Assistant Professor in Mathematics of Information in the [Department of Applied Mathematics and Theoretical Physics (DAMTP)](https://www.damtp.cam.ac.uk/). I will spend the 2026-2027 academic year as visiting faculty at [New York University's Courant Institute](https://math.nyu.edu/).
+    On October 1, 2026, I joined the faculty at the University of Cambridge as an Assistant Professor in Mathematics of Information in the [Department of Applied Mathematics and Theoretical Physics (DAMTP)](https://www.damtp.cam.ac.uk/). I am spending the 2026-2027 academic year as visiting faculty at [New York University's Courant Institute](https://math.nyu.edu/).
   biography:
     - >-
-      I am an incoming Assistant Professor in Mathematics of Information in the [Department of Applied Mathematics and Theoretical Physics (DAMTP)](https://www.damtp.cam.ac.uk/) at the University of Cambridge.
+      I am an [Assistant Professor in Mathematics of Information](https://www.damtp.cam.ac.uk/person/gs852) in the [Department of Applied Mathematics and Theoretical Physics (DAMTP)](https://www.damtp.cam.ac.uk/) at the University of Cambridge. I am also visiting faculty at [New York University's Courant Institute](https://math.nyu.edu/) for the 2026-2027 academic year.
+    - >-
+      In 2026-2027, I serve as Part III Subject Advisor for the ACDA subgroup within DAMTP and organize the [DAMTP ACDA Colloquium](https://talks.cam.ac.uk/show/index/9811/).
     - >-
       Previously, I was an [NSF MSPRF](https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2402074&HistoricalAwards=false) postdoctoral fellow at the California Institute of Technology in the [Department of Computing and Mathematical Sciences](https://www.cms.caltech.edu/) working with [Prof. Andrew Stuart](http://stuart.caltech.edu/). I received my PhD from the Massachusetts Institute of Technology (MIT) in 2024 in the [Department of Mathematics](https://math.mit.edu/) co-advised by [Prof. Philippe Rigollet](https://math.mit.edu/~rigollet/) and [Prof. Jörn Dunkel](https://math.mit.edu/~dunkel/) funded by the [NSF GRFP](https://www.nsf.gov/awardsearch/show-award/?AWD_ID=1745302) and MIT Presidential Fellowship. At MIT, I was also part of the [Interdisciplinary Doctoral Program in Statistics (IDPS)](https://stat.mit.edu/academics/idps/) through the [Institute for Data, Systems, and Society (IDSS)](https://idss.mit.edu/).
     - >-
@@ -82,13 +85,13 @@ profile:
 
 employment:
   - id: cambridge-assistant-professor
-    dates: "(To Begin) Oct 2026"
+    dates: "Oct 2026 - Present"
     institution: University of Cambridge
     role: Assistant Professor
     title: Assistant Professor in Mathematics of Information
     department: Department of Applied Mathematics and Theoretical Physics (DAMTP)
   - id: nyu-visiting-faculty
-    dates: "(To Begin) Oct 2026"
+    dates: "Oct 2026 - Present"
     institution: New York University
     role: Visiting Faculty
     department: Courant Institute School of Mathematics, Computing, and Data Science
@@ -827,6 +830,13 @@ mentoring:
         dates: 2015 - 2016
 
 service:
+  - id: damtp-acda-subject-advisor
+    title: Part III Subject Advisor for the ACDA subgroup, DAMTP, University of Cambridge
+    dates: 2026 - 2027
+  - id: damtp-acda-colloquium
+    title: Organizer of the DAMTP ACDA Colloquium, University of Cambridge
+    dates: 2026 - 2027
+    url: "https://talks.cam.ac.uk/show/index/9811/"
   - id: cmx-seminar
     title: Organizer of Caltech CMS Departmental CMX Seminar
     dates: 2025 - 2026
@@ -890,7 +900,7 @@ internships:
 
 news:
   - id: cambridge-nyu-2026
-    title: Joining Cambridge as Assistant Professor; visiting NYU Courant in 2026-2027
+    title: Joined Cambridge as Assistant Professor; visiting NYU Courant in 2026-2027
     date: Oct 2026
     related: [cambridge-assistant-professor, nyu-visiting-faculty]
   - id: simons-news-2026

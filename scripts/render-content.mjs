@@ -333,7 +333,9 @@ function renderProfileHeading(data, mobile) {
   const headingClass = mobile ? "mb-1 text-3xl font-bold text-heading" : "mt-5 mb-1 text-2xl font-bold text-heading";
   return [
     '          <h2 class="' + headingClass + '">' + escapeHtml(data.profile.name) + "</h2>",
-    "          <p>" + data.profile.headline.map(escapeHtml).join("<br/>") + "</p>",
+    '          <div class="flex flex-col gap-3 leading-relaxed">',
+    data.profile.headline.map((headline) => "            <p>" + escapeHtml(headline) + "</p>").join("\n"),
+    "          </div>",
     ...(mobile ? [
       '          <div class="mt-4 flex flex-col items-center gap-3">',
       renderProfileEmails(data),
@@ -620,7 +622,9 @@ function renderTeaching(data) {
     "            </div>",
     '            <div class="mb-12">',
     '              <h2 class="mb-6 text-2xl font-semibold text-heading">Service and Leadership</h2>',
-    data.service.map((item) => compactTimelineItem(item.dates, escapeHtml(item.title))).join("\n"),
+    data.service.map((item) => compactTimelineItem(item.dates, item.url
+      ? '<a class="hover:text-primary hover:underline" href="' + escapeAttr(item.url) + '">' + escapeHtml(item.title) + "</a>"
+      : escapeHtml(item.title))).join("\n"),
     "            </div>",
     '            <div class="mb-12">',
     '              <h2 class="mb-6 text-2xl font-semibold text-heading">Professional Membership</h2>',
