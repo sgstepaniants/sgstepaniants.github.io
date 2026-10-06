@@ -18,6 +18,7 @@ profile:
   emails:
     - gs852@cam.ac.uk
     - georgestepaniants@gmail.com
+  office: F2.04
   locations:
     - label: New York, NY
       url: "https://www.google.com/maps/search/?api=1&query=New+York%2C+NY"

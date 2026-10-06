@@ -17,7 +17,7 @@ Run `npm run check` to verify that generated content is current and the JavaScri
 
 ## Contact details and form delivery
 
-The first address in `profile.emails` is the primary contact shown on the website and CV. Additional addresses appear as secondary contacts on the front page. `profile.locations` supplies the desktop and mobile location links.
+The first address in `profile.emails` is the primary contact shown on the website and CV. Additional addresses appear as secondary contacts on the front page. `profile.locations` supplies the desktop and mobile location links, and `profile.office` adds the office number beneath them.
 
 The contact form uses EmailJS through `assets/js/contact-form.js`, independently of the website navigation script. It uses Gmail service `service_jjj269v` and template `template_k0xotgp`. George supplied the replacement service ID on September 19, 2026 after successfully connecting Gmail. Change these identifiers only using settings from George's EmailJS account.
 

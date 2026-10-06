@@ -340,6 +340,7 @@ function renderProfileHeading(data, mobile) {
       '          <div class="mt-4 flex flex-col items-center gap-3">',
       renderProfileEmails(data),
       renderProfileLocations(data),
+      renderProfileOffice(data),
       "          </div>",
     ] : []),
   ].join("\n");
@@ -372,6 +373,18 @@ function renderProfileLocations(data) {
     '              <a href="' + escapeAttr(location.url) + '" class="hover:text-heading hover:underline">' + escapeHtml(location.label) + "</a>",
     "            </span>",
   ].join("\n")).join("\n");
+}
+
+function renderProfileOffice(data) {
+  if (!data.profile.office) return "";
+  return [
+    '            <span class="flex items-center">',
+    '              <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">',
+    '                <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M5 21V3h14v18M9 7h1m4 0h1M9 11h1m4 0h1m-5 10v-6h4v6" />',
+    "              </svg>",
+    "              <span>Office: " + escapeHtml(data.profile.office) + "</span>",
+    "            </span>",
+  ].join("\n");
 }
 
 function renderContactEmail(data) {
@@ -969,6 +982,7 @@ index = replaceHtmlBlock(index, "PROFILE_METADATA", renderMetadata(data));
 index = replaceHtmlBlock(index, "PROFILE_SIDEBAR", renderProfileHeading(data, false));
 index = replaceHtmlBlock(index, "PROFILE_EMAILS", renderProfileEmails(data));
 index = replaceHtmlBlock(index, "PROFILE_LOCATIONS", renderProfileLocations(data));
+index = replaceHtmlBlock(index, "PROFILE_OFFICE", renderProfileOffice(data));
 index = replaceHtmlBlock(index, "PROFILE_MOBILE", renderProfileHeading(data, true));
 index = replaceHtmlBlock(index, "CONTACT_EMAIL", renderContactEmail(data));
 index = replaceHtmlBlock(index, "ABOUT", renderAbout(data));
