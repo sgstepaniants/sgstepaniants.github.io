@@ -202,20 +202,49 @@ publications:
     authors: [Matthew J. Colbrook, George Stepaniants]
     venue: "arXiv preprint arXiv:2611.02279"
     citation_detail: "(2026)."
+    card_venue: arXiv preprint
     year: 2026
     url: "https://arxiv.org/abs/2611.02279"
     published_date: November 1, 2026
-    research_card: false
+    # Original illustration of Theorem 1.1 for unit-area rectangles, not a figure from the paper.
+    # S = diag(1/2, 2); lambda_1 changes from 17*pi^2/4 to 2*pi^2.
+    image: affine_reverse_faber_krahn.png
+    thumbnail:
+      crop: [0, 0, 1944, 936]
+      padding: 8
+      alt: An area-preserving linear map reshapes a thin rectangle into a square, reducing its first Dirichlet eigenvalue
+    image_alt: First Dirichlet eigenfunctions on a unit-area rectangle and square, connected by a determinant-one linear map, with their exact first eigenvalues
+    image_caption: "Illustration for unit-area rectangles: an area-preserving map takes a 2 by 1/2 rectangle to the unit square, reducing the first Dirichlet eigenvalue from 17π²/4 to 2π². Colors show the first eigenfunction scaled to a maximum of one. This is an explanatory illustration, not a figure from the preprint."
+    groups: [other]
+    research_card: true
+    abstract: >-
+      We prove that every convex body K ⊂ ℝⁿ admits a determinant-one linear map S such that λ₁(SK)|K|^(2/n) ≤ Cn, where C is universal. For origin-symmetric bodies of volume one, the bound holds in maximal Gaussian measure position. The main step is the spectral estimate λ₁(D) ≤ C(P)(n + √(n I(ν | γₙ))) for an even isotropic log-concave probability measure ν supported on a symmetric convex body D, with Poincaré constant at most P and finite relative Fisher information. A second-order Stein estimate and an information jump under convolution give entropy decay faster than m⁻¹ for normalised sums. Their supports control the Gaussian measure of dilates, and a Brownian bridge expansion gives the spectral estimate. A Gaussian-weighted ground state supplies a measure whose Fisher information is bounded in terms of λ₁(K). The square-root dependence then gives the bound of order n.
+    keywords: [Dirichlet eigenvalue, convex body, Gaussian position, Fisher information, Stein kernel, Brownian bridge]
   - id: spectral-isometries
     category: preprint
     title: Spectral isometries of unital C*-algebras
     authors: [Matthew J. Colbrook, George Stepaniants]
     venue: "arXiv preprint arXiv:2610.40470"
     citation_detail: "(2026)."
+    card_venue: arXiv preprint
     year: 2026
     url: "https://arxiv.org/abs/2610.40470"
     published_date: October 29, 2026
-    research_card: false
+    # Original illustration of the similarity example in Section 1, not a figure from the paper.
+    # A = [[0, 1], [1, 0]], S_t = diag(exp(t), exp(-t)), T_t(A) = S_t A S_t^-1.
+    # The numerical range has semiaxes cosh(2t), sinh(2t); the eigenvalues remain -1 and 1.
+    image: spectral_isometries.png
+    thumbnail:
+      crop: [90, 125, 850, 710]
+      padding: 8
+      alt: Nested elliptical numerical ranges share fixed eigenvalues at minus one and plus one
+    image_alt: Elliptical numerical ranges of similar two-by-two matrices with fixed eigenvalues, beside a constant spectral radius and increasing operator norm
+    image_caption: "Illustration of the similarity example from the introduction. For A = [[0, 1], [1, 0]] and Sₜ = diag(eᵗ, e⁻ᵗ), Tₜ(A) = Sₜ A Sₜ⁻¹ has eigenvalues -1 and 1 and satisfies Tₜ(A)² = I. Its numerical range and operator norm vary with t, while its spectral radius stays equal to one. This is an explanatory illustration, not a figure from the preprint."
+    groups: [other]
+    research_card: true
+    abstract: >-
+      This paper provides a human digestion of a proof of the spectral isometry conjecture for C*-algebras found by GPT-6 Astra. We prove that every unital surjective complex-linear spectral isometry between unital C*-algebras is a Jordan isomorphism. Without the assumption that the map preserves the identity, it is a central unitary multiple of a Jordan isomorphism. The main step is to show that an entire one-parameter group of unital spectral isometries consists of algebra automorphisms. To prove this, we extend the group to the bidual, which splits into finite and properly infinite summands. On the finite part, we use quadratic and cubic trace identities and on the properly infinite part, we apply a structure theorem for maps that preserve square-zero elements. To show that both summands are invariant, we use holomorphic dependence on the parameter together with a uniform resolvent bound, which ensures that self-adjoint elements have images with real spectrum. We then apply the group theorem to inner automorphisms conjugated by the original spectral isometry. This reduces the problem to the commutative case, where Nagasawa's theorem completes the proof.
+    keywords: [spectral isometry, C*-algebra, Jordan isomorphism, spectral radius, von Neumann algebra, square-zero preserver]
   - id: forsythe-complete-resolution
     category: preprint
     title: A Complete Resolution of Forsythe's Conjecture for Restarted Conjugate Gradients
@@ -958,10 +987,6 @@ internships:
     description: Worked in the Neuroscience Pain Research Unit at Pfizer. Studied how various drugs help regenerate healthy cells damaged by neurodegenerative diseases, especially Parkinson's. Used image analysis algorithms, particularly 3D Watershed Segmentation, to quantify the percentage of regenerated healthy cells after treatment. My automated imaging pipeline was used by researchers to quantify hundreds of drug profiles and reduced the runtime of their image analysis code by 10 times.
 
 news:
-  - id: spectral-isometries-affine-faber-krahn-news-2026
-    title: New preprints on spectral isometries of C*-algebras and an affine reverse Faber-Krahn inequality
-    date: Nov 2026
-    related: [spectral-isometries, affine-reverse-faber-krahn]
   - id: cambridge-nyu-2026
     title: Joined Cambridge as Assistant Professor; visiting NYU Courant in 2026-2027
     date: Oct 2026
