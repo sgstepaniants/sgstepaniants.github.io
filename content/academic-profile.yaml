@@ -1,6 +1,6 @@
 meta:
   schema_version: 1
-  last_reviewed: "2026-10-05"
+  last_reviewed: "2026-11-05"
   update_sources:
     - name: ORCID
       url: "https://orcid.org/0000-0002-7834-7536"
@@ -195,6 +195,26 @@ publications:
     citation_detail: "(2024)."
     year: 2024
     url: "https://dspace.mit.edu/handle/1721.1/155887?show=full"
+    research_card: false
+  - id: affine-reverse-faber-krahn
+    category: preprint
+    title: An affine reverse Faber-Krahn inequality via information decay
+    authors: [Matthew J. Colbrook, George Stepaniants]
+    venue: "arXiv preprint arXiv:2611.02279"
+    citation_detail: "(2026)."
+    year: 2026
+    url: "https://arxiv.org/abs/2611.02279"
+    published_date: November 1, 2026
+    research_card: false
+  - id: spectral-isometries
+    category: preprint
+    title: Spectral isometries of unital C*-algebras
+    authors: [Matthew J. Colbrook, George Stepaniants]
+    venue: "arXiv preprint arXiv:2610.40470"
+    citation_detail: "(2026)."
+    year: 2026
+    url: "https://arxiv.org/abs/2610.40470"
+    published_date: October 29, 2026
     research_card: false
   - id: forsythe-complete-resolution
     category: preprint
@@ -527,6 +547,44 @@ talks:
     date: November 2026
     note: Upcoming
     url: "https://www.physics.columbia.edu/events/applied-math-colloquium-george-stepaniants-u-cambridge"
+  # October 30, 2026; date and title verified on the official event page.
+  - id: cambridge-material-laws-2026
+    type: invited
+    title: Learning Memory and Material Dependent Constitutive Laws
+    event: Cambridge Engineering - Mechanics and Materials Seminar Series
+    location: Cambridge
+    date: October 2026
+    url: "https://talks.cam.ac.uk/talk/index/273296/"
+  # October 29, 2026; date from George's calendar, title confirmed by George.
+  - id: manchester-forsythe-2026
+    type: invited
+    title: "A Complete Resolution of Forsythe's Conjecture: An Exploration with AI-Assisted Mathematics"
+    event: University of Manchester Centre for AI Fundamentals
+    location: Manchester
+    date: October 2026
+  # October 27, 2026; date and title verified on the official event page.
+  - id: imperial-volterra-2026
+    type: invited
+    title: Volterra Integral Equations and Memory Dependent Constitutive Laws
+    event: Imperial College London Dynamical Systems Seminar
+    location: London
+    date: October 2026
+    url: "https://www.imperial.ac.uk/events/215496/dynamical-systems-seminar-george-stepaniants/"
+  # October 26, 2026; date from George's calendar, series and title confirmed by George.
+  - id: damtp-ai-assisted-mathematics-2026
+    type: invited
+    title: "What We Did Last Summer: Adventures in AI-Assisted Mathematics"
+    event: DAMTP Colloquium
+    location: Cambridge
+    date: October 2026
+  # October 20, 2026; date and title verified on the official event page.
+  - id: imperial-shortcake-2026
+    type: invited
+    title: A Shortcake Counterexample to the Planar Pompeiu and Schiffer Conjectures
+    event: Imperial College London CCMI Seminar
+    location: London
+    date: October 2026
+    url: "https://www.imperial.ac.uk/events/214613/ccmi-seminar-george-stepaniants-university-of-cambridge/"
   - id: princeton-shortcake-2026
     type: invited
     title: A Shortcake Counterexample to the Planar Pompeiu and Schiffer Conjectures
@@ -900,6 +958,10 @@ internships:
     description: Worked in the Neuroscience Pain Research Unit at Pfizer. Studied how various drugs help regenerate healthy cells damaged by neurodegenerative diseases, especially Parkinson's. Used image analysis algorithms, particularly 3D Watershed Segmentation, to quantify the percentage of regenerated healthy cells after treatment. My automated imaging pipeline was used by researchers to quantify hundreds of drug profiles and reduced the runtime of their image analysis code by 10 times.
 
 news:
+  - id: spectral-isometries-affine-faber-krahn-news-2026
+    title: New preprints on spectral isometries of C*-algebras and an affine reverse Faber-Krahn inequality
+    date: Nov 2026
+    related: [spectral-isometries, affine-reverse-faber-krahn]
   - id: cambridge-nyu-2026
     title: Joined Cambridge as Assistant Professor; visiting NYU Courant in 2026-2027
     date: Oct 2026
