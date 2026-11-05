@@ -187,6 +187,7 @@ awards:
     dates: Sep 2015
 
 publications:
+  # Research pop-ups omit figure captions; keep figure provenance in source comments.
   - id: mit-thesis
     category: thesis
     title: Inference from Limited Observations in Statistical, Dynamical, and Functional Problems
@@ -207,14 +208,14 @@ publications:
     url: "https://arxiv.org/abs/2611.02279"
     published_date: November 1, 2026
     # Original illustration of Theorem 1.1 for unit-area rectangles, not a figure from the paper.
-    # S = diag(1/2, 2); lambda_1 changes from 17*pi^2/4 to 2*pi^2.
+    # Omega_t = R((1-t)*pi/6) diag(2^(1-t), 2^(t-1)) [-1/2, 1/2]^2, 0 <= t <= 1.
+    # Area stays one; lambda_1(Omega_t)/pi^2 = 4^(1-t) + 4^(t-1).
     image: affine_reverse_faber_krahn.png
     thumbnail:
-      crop: [0, 0, 1944, 936]
+      crop: [52, 37, 610, 652]
       padding: 8
-      alt: An area-preserving linear map reshapes a thin rectangle into a square, reducing its first Dirichlet eigenvalue
-    image_alt: First Dirichlet eigenfunctions on a unit-area rectangle and square, connected by a determinant-one linear map, with their exact first eigenvalues
-    image_caption: "Illustration for unit-area rectangles: an area-preserving map takes a 2 by 1/2 rectangle to the unit square, reducing the first Dirichlet eigenvalue from 17π²/4 to 2π². Colors show the first eigenfunction scaled to a maximum of one. This is an explanatory illustration, not a figure from the preprint."
+      alt: Contours of the first Dirichlet eigenfunction on a rotated unit-area rectangle
+    image_alt: First Dirichlet eigenfunctions on a rotated unit-area rectangle and square, and the exact first eigenvalue along an area-preserving affine path
     groups: [other]
     research_card: true
     abstract: >-
@@ -235,11 +236,10 @@ publications:
     # The numerical range has semiaxes cosh(2t), sinh(2t); the eigenvalues remain -1 and 1.
     image: spectral_isometries.png
     thumbnail:
-      crop: [90, 125, 850, 710]
+      crop: [173, 29, 915, 739]
       padding: 8
       alt: Nested elliptical numerical ranges share fixed eigenvalues at minus one and plus one
     image_alt: Elliptical numerical ranges of similar two-by-two matrices with fixed eigenvalues, beside a constant spectral radius and increasing operator norm
-    image_caption: "Illustration of the similarity example from the introduction. For A = [[0, 1], [1, 0]] and Sₜ = diag(eᵗ, e⁻ᵗ), Tₜ(A) = Sₜ A Sₜ⁻¹ has eigenvalues -1 and 1 and satisfies Tₜ(A)² = I. Its numerical range and operator norm vary with t, while its spectral radius stays equal to one. This is an explanatory illustration, not a figure from the preprint."
     groups: [other]
     research_card: true
     abstract: >-
@@ -262,7 +262,6 @@ publications:
       padding: 8
       alt: Contours within the parameter rectangle of limiting two-cycles at restart length three, with four orange corner points
     image_alt: Limiting two-cycle geometry at restart length three alongside a transverse Hopf crossing at restart length four
-    image_caption: "Figure 1. The threshold mechanism: the parameter rectangle of limiting two-cycles for restart length three (left), and a numerical reconstruction of the certified transverse Hopf crossing for restart length four (right)."
     groups: [other]
     research_card: true
     abstract_label: Summary
@@ -285,7 +284,6 @@ publications:
       crop: [14, 8, 774, 648]
       padding: 8
     image_alt: Sign-changing eigenfunction on a noncircular domain with thirteen-fold rotational symmetry, with nodal curves and a color scale
-    image_caption: "Figure 1. Numerical approximation to the sign-changing eigenfunction on the Berenstein counterexample domain."
     groups: [ip]
     research_card: true
     abstract_label: Summary
@@ -309,7 +307,6 @@ publications:
       padding: 8
       alt: Even and odd restarted conjugate-gradient trajectories approaching two limiting directions
     image_alt: Even and odd restarted conjugate-gradient trajectories approach two limiting directions, while their distances to those limits decay to roundoff
-    image_caption: "Figure 1. Two-step restarted conjugate gradients: residual trajectories and convergence to the even and odd limiting states."
     groups: [other]
     research_card: true
     abstract_label: Summary
@@ -332,7 +329,6 @@ publications:
       crop: [5, 8, 785, 758]
       padding: 14
     image_alt: Ten-lobed, noncircular shortcake-shaped domain forming a counterexample to the planar Pompeiu and Schiffer conjectures
-    image_caption: "Figure 1. Boundary of the finite conformal approximation to the ten-lobed counterexample domain."
     groups: [ip]
     research_card: true
     abstract_label: Summary
