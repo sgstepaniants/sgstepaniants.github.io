@@ -524,8 +524,7 @@ publications:
   - id: sieve
     category: preparation
     title: "SIEVE: Spectral integral transforms, poly-exponential approximants, and Volterra equations"
-    authors: [David Darrow, George Stepaniants, Chris Camaño]
-    equal_contribution: [David Darrow, George Stepaniants]
+    authors: [Chris Camaño, David Darrow, George Stepaniants]
     year: 2026
     research_card: false
   - id: lebesgue-report
