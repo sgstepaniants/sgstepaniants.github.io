@@ -1,6 +1,6 @@
 meta:
   schema_version: 1
-  last_reviewed: "2026-11-05"
+  last_reviewed: "2026-11-10"
   update_sources:
     - name: ORCID
       url: "https://orcid.org/0000-0002-7834-7536"
@@ -197,6 +197,30 @@ publications:
     year: 2024
     url: "https://dspace.mit.edu/handle/1721.1/155887?show=full"
     research_card: false
+  - id: inelastic-homogenization
+    category: preprint
+    title: "Operator Learning of Microstructure-Dependent Internal-Variable Models for Inelastic Homogenization: Approximation and Complexity"
+    authors: [Lianghao Cao, George Stepaniants, Andrew M. Stuart]
+    venue: "arXiv preprint arXiv:2611.11805"
+    citation_detail: "(2026)."
+    card_venue: arXiv preprint
+    year: 2026
+    url: "https://arxiv.org/abs/2611.11805"
+    published_date: November 9, 2026
+    # Figure 1 (graphical abstract), arXiv:2611.11805v1, page 2.
+    # Source: https://arxiv.org/html/2611.11805v1/graphical_abstract.png
+    image: inelastic_homogenization.png
+    thumbnail:
+      crop: [164, 116, 150, 156]
+      padding: 8
+      alt: Colored grains form a cubic material microstructure
+    image_alt: Graphical abstract showing how microstructure and loading history feed a recurrent neural operator to predict macroscopic stress, with approximation guarantees and numerical findings
+    groups: [de, other]
+    research_card: true
+    abstract_label: Summary
+    abstract: >-
+      We study recurrent neural operators that predict the macroscopic response of heterogeneous inelastic materials from their microstructure and loading history. Internal variables summarize the past, allowing an evolving state to replace repeated unit-cell simulations. For periodic Kelvin-Voigt viscoelasticity in two and three dimensions, we prove approximation to arbitrary accuracy, uniformly over time and admissible microstructures and strain histories. A spectral representation of the homogenized memory kernel yields an explicit sufficient dimension for the internal state, with logarithmic dependence on inverse relative stress error and material contrast. Experiments on viscoelasticity and crystal plasticity examine how prediction accuracy depends on the number of internal variables and the amount of training data. The theoretical results are formally verified in Lean 4.
+    keywords: [neural operators, homogenization, constitutive modeling, internal variables, viscoelasticity, crystal plasticity]
   - id: affine-reverse-faber-krahn
     category: preprint
     title: An affine reverse Faber-Krahn inequality via information decay
@@ -563,13 +587,13 @@ talks:
     event: SIAM Conference on Mathematics of Data Science
     location: Atlanta
     date: October 2024
+  # November 10, 2026; date and title verified on the official event page, delivery confirmed by George.
   - id: columbia-shortcake-2026
     type: invited
     title: A Shortcake Counterexample to the Planar Pompeiu and Schiffer Conjectures
     event: Columbia Applied Mathematics Colloquium
     location: New York
     date: November 2026
-    note: Upcoming
     url: "https://www.physics.columbia.edu/events/applied-math-colloquium-george-stepaniants-u-cambridge"
   # October 30, 2026; date and title verified on the official event page.
   - id: cambridge-material-laws-2026
@@ -801,6 +825,49 @@ talks:
     date: June 2019
 
 teaching:
+  # Cambridge's 2026-2027 Part III Guide to Courses; Michaelmas teaching confirmed by George.
+  - id: cambridge-data-driven-dynamics-2027
+    category: instructor
+    code: Part III
+    institution: University of Cambridge
+    institution_short: Cambridge
+    role: Lecturer
+    term: Lent 2027 (Upcoming)
+    title: Data-Driven Methods for Dynamical Systems
+    url: "https://www.maths.cam.ac.uk/postgrad/part-iii/files/GtC/Applied%20and%20computstional%20analysis/datadrivendynamics_stepaniants.pdf"
+    resume_subtitle: Data-Driven Methods for Dynamical Systems (Non-Examinable)
+    responsibility: Scheduled to teach a 12-lecture graduate course in Lent 2027, with three examples sheets and accompanying office hours.
+    resume_detail: Upcoming 12-lecture graduate course on system identification, modal decomposition, neural and Gaussian-process ODEs, adjoint sensitivity methods, and Bayesian data assimilation.
+    overview: >-
+      This non-examinable graduate course will introduce methods for learning and predicting dynamical systems from data, with particular attention to incomplete observations and separation of scales. Topics include regression and modal decomposition, optimisation through dynamical models, and Bayesian filtering and smoothing, supported by computational examples in Python or Julia.
+  - id: cambridge-applied-analysis-2026
+    category: instructor
+    code: Part III
+    institution: University of Cambridge
+    institution_short: Cambridge
+    role: Co-Lecturer
+    term: Michaelmas 2026
+    title: Applied Analysis
+    url: "https://www.maths.cam.ac.uk/postgrad/part-iii/files/GtC/Applied%20and%20computstional%20analysis/AppliedAnalysis_Stuart.pdf"
+    resume_subtitle: Applied Analysis
+    responsibility: Co-taught the 24-lecture Part III course with David Stuart in Michaelmas 2026.
+    resume_detail: Co-taught with David Stuart. Functional analysis and operator theory, variational methods, and nonlinear analysis, with applications to differential and integral equations.
+    overview: >-
+      A Part III course developing analytical tools for differential and integral equations. Topics include operators on Hilbert and Banach spaces, spectral theory, variational methods, weak and Gamma convergence, implicit function theorems, bifurcation, and gradient flows, with applications across physics, materials science, and imaging.
+  - id: cambridge-mathematical-methods-data-science-2026
+    category: instructor
+    code: Part III
+    institution: University of Cambridge
+    institution_short: Cambridge
+    role: Co-Lecturer
+    term: Michaelmas 2026
+    title: Mathematical Methods in Data Science
+    url: "https://www.maths.cam.ac.uk/postgrad/part-iii/files/GtC/Applied%20and%20computstional%20analysis/mathmethodsdatascience_stepaniants.pdf"
+    resume_subtitle: Mathematical Methods in Data Science
+    responsibility: Taught the Statistical Learning Theory section, covering empirical risk minimisation, generalisation, concentration, estimation rates, and minimax theory. Co-lectured with Tram Nguyen and Alexei Shadrin.
+    resume_detail: Co-taught with Tram Nguyen and Alexei Shadrin. Taught Statistical Learning Theory, covering empirical risk minimisation, generalisation, concentration, estimation rates, and minimax theory.
+    overview: >-
+      A 24-lecture Part III course on the foundations of data-driven estimation, organised around statistical learning, inverse problems, and approximation theory. Topics connect prediction from finite samples, recovery of hidden parameters and functions, regularisation, and approximation in function spaces.
   - id: caltech-acm270
     category: instructor
     code: ACM 270

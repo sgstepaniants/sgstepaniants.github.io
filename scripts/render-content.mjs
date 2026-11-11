@@ -200,7 +200,9 @@ function latexDate(value) {
 }
 
 function texUrl(url) {
-  return "\\detokenize{" + String(url).replaceAll("}", "") + "}";
+  // Raw percent signs start TeX comments even inside \detokenize.
+  return String(url).replaceAll("}", "").split("%")
+    .map((part) => "\\detokenize{" + part + "}").join("\\%");
 }
 
 function texLink(url, label) {
@@ -619,7 +621,7 @@ function renderTeaching(data) {
     "            </ol>",
     '            <p class="mb-5 text-sm leading-relaxed">' + escapeHtml(philosophy.closing) + "</p>",
     "            <br>",
-    '            <h2 class="mb-6 text-2xl font-semibold text-heading">Instructor of Record</h2>',
+    '            <h2 class="mb-6 text-2xl font-semibold text-heading">Lecture Courses</h2>',
     '            <div class="grid w-full grid-cols-1 gap-5 sm:grid-cols-2">',
     instructors.map(renderCourseCard).join("\n"),
     "            </div>",
